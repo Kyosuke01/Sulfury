@@ -1,0 +1,145 @@
+body {
+  margin: auto;
+  padding: auto;
+  background-color: #eeeeee;
+}
+
+.page-header {
+  background: no-repeat left/cover url(banner.jpg);
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_sulfury {
+  color: white;
+  margin-left: 25px;
+  font-size: 50px;
+}
+
+.nav_link {
+  display: flex;
+  background-color: rgb(75, 75, 75);
+  font-size: 150%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+}
+
+.nav_link_home {
+  text-decoration: none;
+  color: rgb(204, 207, 0);
+}
+
+.nav_link_reglement,
+.nav_link_equipe,
+.nav_link_join {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav_link_reglement2 {
+  text-decoration: none;
+  color: rgb(204, 207, 0);
+}
+
+.nav_link_home2,
+.nav_link_equipe2,
+.nav_link_join2 {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav_link_equipe3 {
+  text-decoration: none;
+  color: rgb(204, 207, 0);
+}
+
+.nav_link_home3,
+.nav_link_reglement3,
+.nav_link_join3 {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.menuderoulant {
+  height: 60px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuderoulant li {
+  float: left;
+  width: 200px;
+}
+
+.menuderoulant li a:link,
+.menuderoulant li a:visited {
+  display: block;
+  color: rgb(red, green, blue);
+  background: #333;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: auto;
+}
+
+.menuderoulant li a:hover {
+  background-color: #199bd2;
+}
+.menuderoulant li a:active {
+  background-color: #333;
+}
+
+.menuderoulant .sousmenu {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.menuderoulant .sousmenu li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuderoulant .sousmenu li a:link,
+.menuderoulant li a:visited {
+  display: block;
+  color: rgb(167, 183, 255);
+  text-decoration: none;
+  background-color: rgb(75, 75, 75);
+}
+
+.menuderoulant .sousmenu li a:hover {
+  background-color: #199bd2;
+  color: white;
+}
+
+.menuderoulant li:hover .sousmenu {
+  display: block;
+}
+
+.menuderoulant .join a:hover {
+  background-color: rgb(250, 223, 73);
+  color: #333;
+}
+
+.menuderoulant li a:hover {
+  background-color: rgb(250, 223, 73);
+  color: #333;
+}
+
+.menuderoulant {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+html {
+  font-family: "Arial", sans-serif;
+}
