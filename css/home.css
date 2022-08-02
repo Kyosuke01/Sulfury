@@ -63,6 +63,8 @@ ul li:nth-child(10) {
   justify-content: center;
   align-items: center;
   margin-top: 7%;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px #45aaf2;
 }
 
 .btn1 {
@@ -98,6 +100,8 @@ ul li:nth-child(10) {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px #34c924;
 }
 
 .btn2 {
@@ -134,6 +138,8 @@ ul li:nth-child(10) {
   align-items: center;
   margin-top: 5%;
   margin-bottom: 10%;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px #bb0b0b;
 }
 
 .btn3 {
