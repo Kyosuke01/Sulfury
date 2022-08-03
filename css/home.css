@@ -88,6 +88,7 @@ ul li:nth-child(10) {
   left: 0px;
   background-color: #45aaf2;
   z-index: -1;
+  box-shadow: 0px 0px 50px #45aaf2;
   transition: 0.4s linear;
 }
 
@@ -125,6 +126,7 @@ ul li:nth-child(10) {
   left: 0px;
   background-color: #34c924;
   z-index: -1;
+  box-shadow: 0px 0px 50px #34c924;
   transition: 0.4s linear;
 }
 
@@ -163,6 +165,7 @@ ul li:nth-child(10) {
   left: 0px;
   background-color: #bb0b0b;
   z-index: -1;
+  box-shadow: 0px 0px 50px #bb0b0b;
   transition: 0.4s linear;
 }
 

@@ -44,5 +44,12 @@
 
 body div div div a:hover {
   opacity: 50%;
-  transition: 0.2s linear;
+  transition: 0.17s linear;
+}
+
+body div div div i {
+  color: black;
+  font-size: 25px;
+  padding: 2px 3px;
+  cursor: pointer;
 }
