@@ -2,6 +2,26 @@
   word-spacing: 50px;
   margin-left: 20%;
   margin-right: 20%;
+  z-index: -1;
+}
+
+.info-box {
+  position: relative;
+}
+
+.info {
+  font-weight: bold;
+  border: 0.5vh solid #ffd700;
+  background-color: #bb0b0b;
+  align-items: center;
+  padding: 0.7vh 1vh;
+  color: white;
+  position: absolute;
+  transform: rotate(25deg);
+  margin-top: -145%;
+  margin-left: 70%;
+  z-index: 1;
+  font-size: 120%;
 }
 
 .pp_pseudo {
