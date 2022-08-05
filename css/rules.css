@@ -1,6 +1,5 @@
 .rules_box_1 {
   display: flex;
-  word-spacing: 50px;
   align-items: center;
   flex-direction: column;
 }
@@ -22,13 +21,11 @@
   border: 1px solid rgb(168, 168, 168);
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  word-spacing: 0;
   margin-top: 3%;
 }
 
 .rules_box_2 {
   display: flex;
-  word-spacing: 50px;
   align-items: center;
   flex-direction: column;
 }
@@ -40,7 +37,7 @@
   border: 1px solid rgb(168, 168, 168);
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .rules_box_text_2 {
@@ -50,13 +47,11 @@
   border: 1px solid rgb(168, 168, 168);
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  word-spacing: 0;
   margin-top: 3%;
 }
 
 .rules_box_3 {
   display: flex;
-  word-spacing: 50px;
   align-items: center;
   flex-direction: column;
 }
@@ -68,7 +63,7 @@
   border: 1px solid rgb(168, 168, 168);
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .rules_box_text_3 {
@@ -78,9 +73,82 @@
   border: 1px solid rgb(168, 168, 168);
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  word-spacing: 0;
   margin-bottom: 10%;
   margin-top: 3%;
+}
+
+@media screen and (max-width: 975px) {
+  .rules_box_text_1,
+  .rules_box_text_2,
+  .rules_box_text_3 {
+    font-size: 90%;
+  }
+  @media screen and (max-width: 855px) {
+    .rules_box_text_1,
+    .rules_box_text_2,
+    .rules_box_text_3 {
+      font-size: 80%;
+    }
+    @media screen and (max-width: 750px) {
+      .rules_box_text_1,
+      .rules_box_text_2,
+      .rules_box_text_3 {
+        font-size: 70%;
+      }
+      @media screen and (max-width: 650px) {
+        .rules_box_text_1,
+        .rules_box_text_2,
+        .rules_box_text_3 {
+          font-size: 60%;
+        }
+        @media screen and (max-width: 550px) {
+          .rules_box_text_1,
+          .rules_box_text_2,
+          .rules_box_text_3 {
+            font-size: 50%;
+          }
+          @media screen and (max-width: 475px) {
+            .rules_box_text_1,
+            .rules_box_text_2,
+            .rules_box_text_3 {
+              font-size: 40%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 975px) {
+  section img {
+    height: 205px;
+  }
+  @media screen and (max-width: 855px) {
+    section img {
+      height: 185px;
+    }
+    @media screen and (max-width: 750px) {
+      section img {
+        height: 165px;
+      }
+      @media screen and (max-width: 650px) {
+        section img {
+          height: 145px;
+        }
+        @media screen and (max-width: 550px) {
+          section img {
+            height: 125px;
+          }
+          @media screen and (max-width: 475px) {
+            section img {
+              height: 105px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .rules_link {
@@ -88,8 +156,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 25px;
-  font-size: 20px;
+  padding: 3%;
+  font-size: 120%;
 }
 
 .rules_link a {
@@ -99,5 +167,61 @@
 
 .footer_text {
   color: rgb(204, 207, 0);
-  margin-left: -150px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer_text {
+    font-size: 95%;
+  }
+  @media screen and (max-width: 680px) {
+    .footer_text {
+      font-size: 85%;
+    }
+    @media screen and (max-width: 585px) {
+      .footer_text {
+        font-size: 75%;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .footer_text {
+        font-size: 65%;
+      }
+      @media screen and (max-width: 375px) {
+        .footer_text {
+          font-size: 55%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .rules_link {
+    font-size: 95%;
+    padding: 2.5%;
+  }
+  @media screen and (max-width: 680px) {
+    .rules_link {
+      font-size: 85%;
+      padding: 2%;
+    }
+    @media screen and (max-width: 585px) {
+      .rules_link {
+        font-size: 75%;
+        padding: 1.5%;
+      }
+      @media screen and (max-width: 480px) {
+        .rules_link {
+          font-size: 65%;
+          padding: 1%;
+        }
+        @media screen and (max-width: 375px) {
+          .rules_link {
+            font-size: 55%;
+            padding: 0.5%;
+          }
+        }
+      }
+    }
+  }
 }

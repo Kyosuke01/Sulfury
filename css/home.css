@@ -58,6 +58,47 @@ ul li:nth-child(10) {
   animation-delay: 1s;
 }
 
+@media screen and (max-width: 800px) {
+  ul li {
+    font-size: 550%;
+  }
+  @media screen and (max-width: 700px) {
+    ul li {
+      font-size: 500%;
+    }
+    @media screen and (max-width: 630px) {
+      ul li {
+        font-size: 450%;
+      }
+      @media screen and (max-width: 550px) {
+        ul li {
+          font-size: 400%;
+        }
+        @media screen and (max-width: 535px) {
+          ul li {
+            font-size: 375%;
+          }
+          @media screen and (max-width: 450px) {
+            ul li {
+              font-size: 350%;
+            }
+            @media screen and (max-width: 435px) {
+              ul li {
+                font-size: 325%;
+              }
+              @media screen and (max-width: 400px) {
+                ul li {
+                  font-size: 300%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .btn1 {
   display: flex;
   justify-content: center;
@@ -65,9 +106,6 @@ ul li:nth-child(10) {
   margin-top: 7%;
   border-radius: 10px;
   box-shadow: -5px 5px 10px #45aaf2;
-}
-
-.btn1 {
   background: none;
   width: 66%;
   height: 117px;
@@ -103,9 +141,6 @@ ul li:nth-child(10) {
   margin-top: 5%;
   border-radius: 10px;
   box-shadow: -5px 5px 10px #34c924;
-}
-
-.btn2 {
   background: none;
   width: 66%;
   height: 117px;
@@ -142,9 +177,6 @@ ul li:nth-child(10) {
   margin-bottom: 10%;
   border-radius: 10px;
   box-shadow: -5px 5px 10px #bb0b0b;
-}
-
-.btn3 {
   background: none;
   width: 66%;
   height: 117px;
@@ -171,6 +203,44 @@ ul li:nth-child(10) {
 
 .btn3:hover::before {
   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .btn1,
+  .btn2,
+  .btn3 {
+    font-size: 250%;
+  }
+  @media screen and (max-width: 700px) {
+    .btn1,
+    .btn2,
+    .btn3 {
+      font-size: 200%;
+      height: 100px;
+    }
+    @media screen and (max-width: 700px) {
+      .btn1::before,
+      .btn2::before,
+      .btn3::before {
+        height: 93px;
+      }
+      @media screen and (max-width: 435px) {
+        .btn1,
+        .btn2,
+        .btn3 {
+          font-size: 150%;
+          height: 83px;
+        }
+        @media screen and (max-width: 435px) {
+          .btn1::before,
+          .btn2::before,
+          .btn3::before {
+            height: 76px;
+          }
+        }
+      }
+    }
+  }
 }
 
 body section div a {
