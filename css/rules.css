@@ -19,7 +19,7 @@
   border-radius: 5px;
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  margin-top: 3%;
+  margin: 3% 10%;
 }
 
 .rules_box_2 {
@@ -43,7 +43,7 @@
   border-radius: 5px;
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  margin-top: 3%;
+  margin: 3% 10%;
 }
 
 .rules_box_3 {
@@ -67,8 +67,7 @@
   border-radius: 5px;
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  margin-bottom: 10%;
-  margin-top: 3%;
+  margin: 3% 10% 10%;
 }
 
 @media screen and (max-width: 975px) {
@@ -106,6 +105,13 @@
             .rules_box_text_2,
             .rules_box_text_3 {
               font-size: 40%;
+            }
+            @media screen and (max-width: 360px) {
+              .rules_box_text_1,
+              .rules_box_text_2,
+              .rules_box_text_3 {
+                font-size: 30%;
+              }
             }
           }
         }
