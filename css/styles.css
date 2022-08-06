@@ -122,6 +122,11 @@ nav {
           nav {
             font-size: 85%;
           }
+          @media screen and (max-width: 360px) {
+            nav {
+              font-size: 75%;
+            }
+          }
         }
       }
     }

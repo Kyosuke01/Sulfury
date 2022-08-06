@@ -13,8 +13,8 @@ const link4 = document.querySelector(".nav_link_join");
 
 const TL1 = new TimelineMax({ paused: true });
 
-TL1.from(header, 1, { y: -100, opacity: 0 })
-  .from(nav, 1, { y: -100, opacity: 0 })
+TL1.from(header, 1, { y: -500, opacity: 0 })
+  .from(nav, 0.5, { y: -200, opacity: 0 })
   .from(img, 1, { opacity: 0 })
   .from(text, 1, { opacity: 0 }, "-=1")
   .from(link1, 0.2, { opacity: 0 })
