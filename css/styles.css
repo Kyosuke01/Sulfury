@@ -57,6 +57,8 @@ body {
   height: 200px;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 5;
 }
 
 @media screen and (max-width: 436px) {
@@ -92,7 +94,7 @@ nav {
   padding: 20px;
   position: sticky;
   top: 0px;
-  z-index: 2;
+  z-index: 4;
 }
 
 @media screen and (max-width: 890px) {

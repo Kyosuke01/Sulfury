@@ -2,7 +2,7 @@
   word-spacing: 50px;
   margin-left: 20%;
   margin-right: 20%;
-  z-index: -1;
+  margin-top: 3%;
 }
 
 .info-box {
@@ -20,7 +20,6 @@
   transform: rotate(25deg);
   margin-top: -145%;
   margin-left: 70%;
-  z-index: 1;
   font-size: 120%;
 }
 
@@ -31,7 +30,7 @@
   border: 1px solid rgb(168, 168, 168);
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  margin-top: 3%;
+  margin-top: 55px;
   align-items: center;
   word-spacing: 0;
 }

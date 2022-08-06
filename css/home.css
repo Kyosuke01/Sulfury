@@ -54,9 +54,6 @@ ul li:nth-child(8) {
 ul li:nth-child(9) {
   animation-delay: 0.9s;
 }
-ul li:nth-child(10) {
-  animation-delay: 1s;
-}
 
 @media screen and (max-width: 800px) {
   ul li {
