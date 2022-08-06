@@ -1,29 +1,11 @@
-.box_user {
-  word-spacing: 50px;
+.all_card {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 3%;
+  word-spacing: 50px;
 }
 
-.info-box {
-  position: relative;
-}
-
-.info {
-  font-weight: bold;
-  border: 0.5vh solid #ffd700;
-  background-color: #bb0b0b;
-  align-items: center;
-  padding: 0.7vh 1vh;
-  color: white;
-  position: absolute;
-  transform: rotate(25deg);
-  margin-top: -145%;
-  margin-left: 70%;
-  font-size: 120%;
-}
-
-.pp_pseudo {
+.card {
   display: inline-grid;
   background-color: white;
   border-radius: 5px;
@@ -61,6 +43,10 @@
   margin-top: 3%;
 }
 
+.fa-lock {
+  cursor: auto;
+}
+
 body div div div a:hover {
   opacity: 50%;
   transition: 0.17s linear;
@@ -71,4 +57,22 @@ body div div div i {
   font-size: 25px;
   padding: 2px 3px;
   cursor: pointer;
+}
+
+.info-box {
+  position: relative;
+}
+
+.info {
+  font-weight: bold;
+  border: 0.5vh solid #ffd700;
+  background-color: #bb0b0b;
+  align-items: center;
+  padding: 0.7vh 1vh;
+  color: white;
+  position: absolute;
+  transform: rotate(25deg);
+  margin-top: -145%;
+  margin-left: 70%;
+  font-size: 120%;
 }

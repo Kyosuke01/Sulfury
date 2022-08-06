@@ -27,3 +27,13 @@ TL1.from(header, 1, { y: -100, opacity: 0 })
   .from(button3, 1.5, { x: -200, opacity: 0 }, "-=1.5");
 
 TL1.play();
+
+const all_card = document.querySelector(".card");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 30) {
+    navigation.classList.add("card2");
+  } else {
+    navigation.classList.remove("card2");
+  }
+});
