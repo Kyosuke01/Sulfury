@@ -90,6 +90,9 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
 }
 
 @media screen and (max-width: 890px) {
