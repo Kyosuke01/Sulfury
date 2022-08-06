@@ -12,7 +12,6 @@ const link3 = document.querySelector(".nav_link_equipe");
 const link4 = document.querySelector(".nav_link_join");
 
 const TL1 = new TimelineMax({ paused: true });
-const TL2 = new TimelineMax({ paused: true });
 
 TL1.from(header, 1, { y: -100, opacity: 0 })
   .from(nav, 1, { y: -100, opacity: 0 })
