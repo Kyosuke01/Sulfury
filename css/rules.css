@@ -10,7 +10,7 @@
   border-radius: 5px;
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .rules_box_text_1 {
@@ -67,7 +67,7 @@
   border-radius: 5px;
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
   padding: 1%;
-  margin: 3% 10% 20%;
+  margin: 3% 10% 10%;
 }
 
 @media screen and (max-width: 975px) {
@@ -218,7 +218,7 @@
         @media screen and (max-width: 375px) {
           .rules_link {
             font-size: 55%;
-            padding: 0.5%;
+            padding: 0.7%;
           }
         }
       }
