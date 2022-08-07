@@ -13,7 +13,7 @@ const link4 = document.querySelector(".nav_link_join");
 
 const TL1 = new TimelineMax({ paused: true });
 
-TL1.from(header, 1, { y: -500, opacity: 0 })
+TL1.from(header, 0.5, { y: -500, opacity: 0 })
   .from(nav, 0.5, { y: -200, opacity: 0 })
   .from(img, 1, { opacity: 0 })
   .from(text, 1, { opacity: 0 }, "-=1")
@@ -27,13 +27,3 @@ TL1.from(header, 1, { y: -500, opacity: 0 })
   .from(button3, 1.5, { x: -200, opacity: 0 }, "-=1.5");
 
 TL1.play();
-
-const all_card = document.querySelector(".card");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 30) {
-    navigation.classList.add("card2");
-  } else {
-    navigation.classList.remove("card2");
-  }
-});
