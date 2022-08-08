@@ -1,18 +1,20 @@
 .all_card {
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 3%;
-  word-spacing: 50px;
+  max-width: 1300px;
+  width: 80%;
+  height: auto;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  grid-gap: 100px;
 }
 
 .card {
-  display: inline-grid;
+  width: 250px;
+  height: 380px;
   background-color: white;
   border-radius: 5px;
   box-shadow: -5px 5px 10px rgb(168, 168, 168);
-  margin-top: 55px;
-  align-items: center;
-  word-spacing: 0;
 }
 
 .pp {
@@ -34,12 +36,6 @@
   border-radius: 5px;
   margin: 5% 10%;
 }
-
-/* .link {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 5%;
-} */
 
 .fa-lock {
   cursor: auto;
@@ -78,21 +74,4 @@ body div div div i {
   margin-top: -140%;
   margin-left: 70%;
   font-size: 120%;
-}
-
-@media screen and (max-width: 400px) {
-  .pp {
-    height: 200px;
-  }
-  .role {
-    font-size: 90%;
-  }
-  .pseudo {
-    font-size: 90%;
-    padding: 5px 0px;
-  }
-
-  body div div div i {
-    font-size: 20px;
-  }
 }
