@@ -147,6 +147,33 @@ nav {
   background: #34c924;
 }
 
+@media screen and (max-width: 890px) {
+  .nav_link_home::before {
+    top: 37px;
+  }
+  @media screen and (max-width: 650px) {
+    .nav_link_home::before {
+      top: 30px;
+    }
+    @media screen and (max-width: 535px) {
+      .nav_link_home::before {
+        top: 27px;
+        height: 2px;
+      }
+      @media screen and (max-width: 450px) {
+        .nav_link_home::before {
+          top: 22px;
+        }
+        @media screen and (max-width: 360px) {
+          .nav_link_home::before {
+            top: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .nav_link_reglement,
 .nav_link_equipe,
 .nav_link_join {
@@ -171,6 +198,38 @@ nav {
   width: 100%;
 }
 
+@media screen and (max-width: 890px) {
+  .nav_link_reglement::before,
+  .nav_link_equipe::before {
+    top: 37px;
+  }
+  @media screen and (max-width: 650px) {
+    .nav_link_reglement::before,
+    .nav_link_equipe::before {
+      top: 30px;
+    }
+    @media screen and (max-width: 535px) {
+      .nav_link_reglement::before,
+      .nav_link_equipe::before {
+        top: 27px;
+        height: 2px;
+      }
+      @media screen and (max-width: 450px) {
+        .nav_link_reglement::before,
+        .nav_link_equipe::before {
+          top: 22px;
+        }
+        @media screen and (max-width: 360px) {
+          .nav_link_reglement::before,
+          .nav_link_equipe::before {
+            top: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .nav_link_reglement2 {
   text-decoration: none;
   color: rgb(204, 207, 0);
@@ -183,6 +242,33 @@ nav {
   top: 42.5px;
   height: 3px;
   background: #34c924;
+}
+
+@media screen and (max-width: 890px) {
+  .nav_link_reglement2::before {
+    top: 37px;
+  }
+  @media screen and (max-width: 650px) {
+    .nav_link_reglement2::before {
+      top: 30px;
+    }
+    @media screen and (max-width: 535px) {
+      .nav_link_reglement2::before {
+        top: 27px;
+        height: 2px;
+      }
+      @media screen and (max-width: 450px) {
+        .nav_link_reglement2::before {
+          top: 22px;
+        }
+        @media screen and (max-width: 360px) {
+          .nav_link_reglement2::before {
+            top: 18px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .nav_link_home2,
@@ -208,6 +294,38 @@ nav {
   width: 100%;
 }
 
+@media screen and (max-width: 890px) {
+  .nav_link_home2::before,
+  .nav_link_equipe2::before {
+    top: 37px;
+  }
+  @media screen and (max-width: 650px) {
+    .nav_link_home2::before,
+    .nav_link_equipe2::before {
+      top: 30px;
+    }
+    @media screen and (max-width: 535px) {
+      .nav_link_home2::before,
+      .nav_link_equipe2::before {
+        top: 27px;
+        height: 2px;
+      }
+      @media screen and (max-width: 450px) {
+        .nav_link_home2::before,
+        .nav_link_equipe2::before {
+          top: 22px;
+        }
+        @media screen and (max-width: 360px) {
+          .nav_link_home2::before,
+          .nav_link_equipe2::before {
+            top: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .nav_link_equipe3 {
   text-decoration: none;
   color: rgb(204, 207, 0);
@@ -220,6 +338,33 @@ nav {
   top: 42.5px;
   height: 3px;
   background: #34c924;
+}
+
+@media screen and (max-width: 890px) {
+  .nav_link_equipe3::before {
+    top: 37px;
+  }
+  @media screen and (max-width: 650px) {
+    .nav_link_equipe3::before {
+      top: 30px;
+    }
+    @media screen and (max-width: 535px) {
+      .nav_link_equipe3::before {
+        top: 27px;
+        height: 2px;
+      }
+      @media screen and (max-width: 450px) {
+        .nav_link_equipe3::before {
+          top: 22px;
+        }
+        @media screen and (max-width: 360px) {
+          .nav_link_equipe3::before {
+            top: 18px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .nav_link_home3,
@@ -243,6 +388,38 @@ nav {
 .nav_link_home3:hover::before,
 .nav_link_reglement3:hover::before {
   width: 100%;
+}
+
+@media screen and (max-width: 890px) {
+  .nav_link_home3::before,
+  .nav_link_reglement3::before {
+    top: 37px;
+  }
+  @media screen and (max-width: 650px) {
+    .nav_link_home3::before,
+    .nav_link_reglement3::before {
+      top: 30px;
+    }
+    @media screen and (max-width: 535px) {
+      .nav_link_home3::before,
+      .nav_link_reglement3::before {
+        top: 27px;
+        height: 2px;
+      }
+      @media screen and (max-width: 450px) {
+        .nav_link_home3::before,
+        .nav_link_reglement3::before {
+          top: 22px;
+        }
+        @media screen and (max-width: 360px) {
+          .nav_link_home3::before,
+          .nav_link_reglement3::before {
+            top: 18px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .picto-item {
