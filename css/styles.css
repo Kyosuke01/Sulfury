@@ -138,6 +138,15 @@ nav {
   color: rgb(204, 207, 0);
 }
 
+.nav_link_home::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 42.5px;
+  height: 3px;
+  background: #34c924;
+}
+
 .nav_link_reglement,
 .nav_link_equipe,
 .nav_link_join {
@@ -145,9 +154,35 @@ nav {
   color: rgb(255, 255, 255);
 }
 
+.nav_link_reglement::before,
+.nav_link_equipe::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 42.5px;
+  width: 0%;
+  height: 3px;
+  background: #34c924;
+  transition: width 0.2s ease-in-out;
+}
+
+.nav_link_reglement:hover::before,
+.nav_link_equipe:hover::before {
+  width: 100%;
+}
+
 .nav_link_reglement2 {
   text-decoration: none;
   color: rgb(204, 207, 0);
+}
+
+.nav_link_reglement2::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 42.5px;
+  height: 3px;
+  background: #34c924;
 }
 
 .nav_link_home2,
@@ -156,15 +191,58 @@ nav {
   color: rgb(255, 255, 255);
 }
 
+.nav_link_home2::before,
+.nav_link_equipe2::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 42.5px;
+  width: 0%;
+  height: 3px;
+  background: #34c924;
+  transition: width 0.2s ease-in-out;
+}
+
+.nav_link_home2:hover::before,
+.nav_link_equipe2:hover::before {
+  width: 100%;
+}
+
 .nav_link_equipe3 {
   text-decoration: none;
   color: rgb(204, 207, 0);
+}
+
+.nav_link_equipe3::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 42.5px;
+  height: 3px;
+  background: #34c924;
 }
 
 .nav_link_home3,
 .nav_link_reglement3 {
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+.nav_link_home3::before,
+.nav_link_reglement3::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 42.5px;
+  width: 0%;
+  height: 3px;
+  background: #34c924;
+  transition: width 0.2s ease-in-out;
+}
+
+.nav_link_home3:hover::before,
+.nav_link_reglement3:hover::before {
+  width: 100%;
 }
 
 .picto-item {
