@@ -31,20 +31,34 @@
 }
 
 .pseudo {
-  background-color: #2f3136;
-  color: white;
+  font-weight: 900;
   padding: 5px 0px;
-  border-radius: 5px;
   margin: 5% 10%;
+  background: linear-gradient(
+    90deg,
+    #ff7575 25%,
+    #a0ff75 50%,
+    #5075ff 75%,
+    #a075ff 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .fa-lock {
   cursor: auto;
 }
 
+body div div div a {
+  transition: opacity 0.17s ease-in-out;
+}
+
 body div div div a:hover {
   opacity: 50%;
-  transition: 0.17s linear;
+}
+
+body div div div a:active {
+  opacity: 100%;
 }
 
 body div div div i {
