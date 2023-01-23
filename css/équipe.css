@@ -90,3 +90,57 @@ body div div div i {
   margin-left: 70%;
   font-size: 120%;
 }
+
+.pseudo_copied {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-copy {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 35%;
+  color: #5865f2;
+  position: relative;
+}
+
+.fa-copy:hover {
+  opacity: 50%;
+}
+
+.fa-copy:active {
+  opacity: 35%;
+}
+
+#popup_kyosuke,
+#popup_kam,
+#popup_liffux,
+#popup_quentin,
+#popup_ryota,
+#popup_xeinel,
+#popup_nico,
+#popup_emin,
+#popup_ninfrast {
+  position: absolute;
+  color: white;
+  background-color: #5865f2;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.option_copy_popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.option_copy_popup #popup_kyosuke,
+.option_copy_popup #popup_kam,
+.option_copy_popup #popup_liffux,
+.option_copy_popup #popup_quentin,
+.option_copy_popup #popup_ryota,
+.option_copy_popup #popup_xeinel,
+.option_copy_popup #popup_nico,
+.option_copy_popup #popup_emin,
+.option_copy_popup #popup_ninfrast {
+  margin-bottom: 60px;
+}

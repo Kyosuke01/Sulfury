@@ -623,10 +623,3 @@ html {
     }
   }
 }
-
-.soap-bubble {
-  position: absolute;
-  border-radius: 50%; /* Forme ronde */
-  background-color: hsl(/* Couleur aléatoire en arc-en-ciel */);
-  opacity: 0.3; /* Opacité faible */
-}
