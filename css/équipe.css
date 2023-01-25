@@ -43,6 +43,7 @@
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  cursor: pointer;
 }
 
 .fa-lock {
@@ -126,13 +127,15 @@ body div div div i {
   background-color: #5865f2;
   border-radius: 5px;
   padding: 4px;
+  margin-bottom: 60px;
 }
 
-.option_copy_popup {
+/* .option_copy_popup {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .option_copy_popup #popup_kyosuke,
 .option_copy_popup #popup_kam,
 .option_copy_popup #popup_liffux,
@@ -143,4 +146,4 @@ body div div div i {
 .option_copy_popup #popup_emin,
 .option_copy_popup #popup_ninfrast {
   margin-bottom: 60px;
-}
+} */
