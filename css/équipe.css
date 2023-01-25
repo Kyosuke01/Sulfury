@@ -24,22 +24,38 @@
 }
 
 .role {
-  background-color: rgb(209, 209, 209);
+  background: linear-gradient(
+    45deg,
+    #9c9e9f 20%,
+    #c2c4c6 40%,
+    #eff0f0 60%,
+    #c3c5c7 80%,
+    #545356 100%
+  );
   padding: 5px 0px;
   margin: -1.5% 0% 0%;
   font-size: 110%;
+  text-shadow: #000 1px 1px 15px;
 }
 
 .pseudo {
   font-weight: 900;
   padding: 5px 0px;
   margin: 5% 10%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     #ff7575 25%,
     #a0ff75 50%,
     #5075ff 75%,
     #a075ff 100%
+  ); */
+  background: linear-gradient(
+    45deg,
+    #c28c32 20%,
+    #d6b96b 40%,
+    #fbf3b3 60%,
+    #c09c2e 80%,
+    #b17e1f 100%
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -124,26 +140,16 @@ body div div div i {
 #popup_ninfrast {
   position: absolute;
   color: white;
-  background-color: #5865f2;
+  background: linear-gradient(
+    45deg,
+    #c28c32 20%,
+    #d6b96b 40%,
+    #fbf3b3 60%,
+    #c09c2e 80%,
+    #b17e1f 100%
+  );
+
   border-radius: 5px;
   padding: 4px;
   margin-bottom: 60px;
 }
-
-/* .option_copy_popup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.option_copy_popup #popup_kyosuke,
-.option_copy_popup #popup_kam,
-.option_copy_popup #popup_liffux,
-.option_copy_popup #popup_quentin,
-.option_copy_popup #popup_ryota,
-.option_copy_popup #popup_xeinel,
-.option_copy_popup #popup_nico,
-.option_copy_popup #popup_emin,
-.option_copy_popup #popup_ninfrast {
-  margin-bottom: 60px;
-} */
