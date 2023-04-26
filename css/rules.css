@@ -151,22 +151,30 @@
   }
 }
 
-.rules_link {
+.footer {
   background-color: rgb(75, 75, 75);
+  height: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1.5%;
   font-size: 120%;
 }
 
-.rules_link a {
+.rules_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
+}
+
+.footer a {
   color: white;
   text-decoration: none;
   display: inline;
 }
 
-.rules_link a::before {
+.footer a::before {
   content: "";
   display: block;
   position: relative;
@@ -177,7 +185,7 @@
   transition: width 0.2s ease-in-out;
 }
 
-.rules_link a:hover::before {
+.footer a:hover::before {
   width: 100%;
 }
 
@@ -185,56 +193,71 @@
   color: rgb(204, 207, 0);
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .footer_text {
-    font-size: 95%;
+    font-size: 120%;
   }
   @media screen and (max-width: 680px) {
     .footer_text {
-      font-size: 85%;
+      font-size: 120%;
     }
     @media screen and (max-width: 585px) {
       .footer_text {
-        font-size: 75%;
+        font-size: 120%;
       }
     }
     @media screen and (max-width: 480px) {
       .footer_text {
-        font-size: 65%;
+        font-size: 120%;
       }
       @media screen and (max-width: 375px) {
         .footer_text {
-          font-size: 55%;
+          font-size: 120%;
         }
       }
     }
   }
-}
+} */
 
 @media screen and (max-width: 900px) {
-  .rules_link {
+  .footer {
     font-size: 95%;
-    padding: 2.5%;
+    height: 250px;
+  }
+  .rules_links {
+    height: 125px;
   }
   @media screen and (max-width: 680px) {
-    .rules_link {
+    .footer {
       font-size: 85%;
-      padding: 2%;
+      height: 225px;
+    }
+    .rules_links {
+      height: 100px;
     }
     @media screen and (max-width: 585px) {
-      .rules_link {
+      .footer {
         font-size: 75%;
-        padding: 1.5%;
+        height: 200px;
+      }
+      .rules_links {
+        height: 85px;
       }
       @media screen and (max-width: 480px) {
-        .rules_link {
+        .footer {
           font-size: 65%;
-          padding: 1%;
+          height: 175px;
+        }
+        .rules_links {
+          height: 70px;
         }
         @media screen and (max-width: 375px) {
-          .rules_link {
+          .footer {
             font-size: 55%;
-            padding: 0.7%;
+            height: 150px;
+          }
+          .rules_links {
+            height: 55px;
           }
         }
       }
@@ -243,24 +266,24 @@
 }
 
 @media screen and (max-width: 900px) {
-  .rules_link a::before {
+  .footer a::before {
     top: 25px;
   }
   @media screen and (max-width: 680px) {
-    .rules_link a::before {
+    .footer a::before {
       top: 20px;
     }
     @media screen and (max-width: 585px) {
-      .rules_link a::before {
+      .footer a::before {
         top: 17px;
         height: 2px;
       }
       @media screen and (max-width: 480px) {
-        .rules_link a::before {
+        .footer a::before {
           top: 15px;
         }
         @media screen and (max-width: 375px) {
-          .rules_link a::before {
+          .footer a::before {
             top: 12px;
           }
         }
