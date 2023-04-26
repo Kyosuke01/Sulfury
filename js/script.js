@@ -1,6 +1,6 @@
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
-const welcome = document.querySelectorAll("ul li");
+const welcome = document.querySelectorAll(".welcome");
 const button1 = document.querySelector(".btn1");
 const button2 = document.querySelector(".btn2");
 const button3 = document.querySelector(".btn3");

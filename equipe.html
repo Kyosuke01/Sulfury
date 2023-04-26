@@ -41,13 +41,17 @@
     </header>
 
     <nav>
-
-        <a class="nav_link_home3" href="index.html"><i class="fa-solid fa-house"></i>&nbspAccueil</a>
-        <a class="nav_link_reglement3" href="reglement.html"><i class="fa-solid fa-shield-halved"></i>&nbspRèglement</a>
-        <a class="nav_link_equipe3"><i class="fa-sharp fa-solid fa-graduation-cap"></i>&nbspÉquipe</a>
-        <a class="nav_link_join" href="https://discord.gg/VFMfByp3ed" target="_blank"><i
-                class="fa-solid fa-link"></i>&nbspRejoindre</a>
-
+        <p class="nav_burger" id="nav_burger">&#x2630;</p>
+        <ul class="nav_link" id="nav_link">
+            <li><a class="nav_link_home3" id="nav_link_home" href="index.html"><i
+                        class="fa-solid fa-house"></i>&nbspAccueil</a></li>
+            <li><a class="nav_link_reglement3" id="nav_link_reglement" href="reglement.html"><i
+                        class="fa-solid fa-shield-halved"></i>&nbspRèglement</a></li>
+            <li><a class="nav_link_equipe3" id="nav_link_equipe"><i
+                        class="fa-sharp fa-solid fa-graduation-cap"></i>&nbspÉquipe</a></li>
+            <li><a class="nav_link_join" id="nav_link_join" href="https://discord.gg/VFMfByp3ed" target="_blank"><i
+                        class="fa-solid fa-link"></i>&nbspRejoindre</a></li>
+        </ul>
     </nav>
 
     <!-- Mettre l'étiquette 'update' -->
@@ -291,6 +295,7 @@
         AOS.init();
     </script>
     <script src="js/pseudo_equipe.js" defer></script>
+    <script src="js/nav_bar.js"></script>
 </body>
 
 </html>

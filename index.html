@@ -39,19 +39,22 @@
     </header>
 
     <nav>
-
-        <a class="nav_link_home"><i class="fa-solid fa-house"></i>&nbspAccueil</a>
-        <a class="nav_link_reglement" href="reglement.html"><i class="fa-solid fa-shield-halved"></i>&nbspRèglement</a>
-        <a class="nav_link_equipe" href="equipe.html"><i class="fa-sharp fa-solid fa-graduation-cap"></i>&nbspÉquipe</a>
-        <a class="nav_link_join" href="https://discord.gg/VFMfByp3ed" target="_blank"><i
-                class="fa-solid fa-link"></i>&nbspRejoindre</a>
-
+        <p class="nav_burger" id="nav_burger">&#x2630;</p>
+        <ul class="nav_link" id="nav_link">
+            <li><a class="nav_link_home" id="nav_link_home"><i class="fa-solid fa-house"></i>&nbspAccueil</a></li>
+            <li><a class="nav_link_reglement" id="nav_link_reglement" href="reglement.html"><i
+                        class="fa-solid fa-shield-halved"></i>&nbspRèglement</a></li>
+            <li><a class="nav_link_equipe" id="nav_link_equipe" href="equipe.html"><i
+                        class="fa-sharp fa-solid fa-graduation-cap"></i>&nbspÉquipe</a></li>
+            <li><a class="nav_link_join" id="nav_link_join" href="https://discord.gg/VFMfByp3ed" target="_blank"><i
+                        class="fa-solid fa-link"></i>&nbspRejoindre</a></li>
+        </ul>
     </nav>
 
     <section>
 
         <div align="center">
-            <ul>
+            <ul class="welcome">
                 <li>B</li>
                 <li>I</li>
                 <li>E</li>
@@ -63,7 +66,7 @@
                 <li>E</li>
             </ul>
 
-            <div>
+            <div class="button_link">
                 <p><a href="reglement.html"><button class="btn1"><i
                                 class="fa-solid fa-shield-halved"></i>&nbspRèglement</button></a>
                 </p>
@@ -86,6 +89,7 @@
         AOS.init();
     </script>
     <script src="js/script.js"></script>
+    <script src="js/nav_bar.js"></script>
 
 </body>
 

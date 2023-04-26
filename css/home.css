@@ -1,10 +1,10 @@
-ul {
+.welcome {
   margin-top: 5%;
   justify-content: center;
   display: flex;
 }
 
-ul li {
+.welcome li {
   list-style: none;
   color: #484848;
   font-size: 600%;
@@ -27,64 +27,64 @@ ul li {
   }
 }
 
-ul li:nth-child(1) {
+.welcome li:nth-child(1) {
   animation-delay: 0.1s;
 }
-ul li:nth-child(2) {
+.welcome li:nth-child(2) {
   animation-delay: 0.2s;
 }
-ul li:nth-child(3) {
+.welcome li:nth-child(3) {
   animation-delay: 0.3s;
 }
-ul li:nth-child(4) {
+.welcome li:nth-child(4) {
   animation-delay: 0.4s;
 }
-ul li:nth-child(5) {
+.welcome li:nth-child(5) {
   animation-delay: 0.5s;
 }
-ul li:nth-child(6) {
+.welcome li:nth-child(6) {
   animation-delay: 0.6s;
 }
-ul li:nth-child(7) {
+.welcome li:nth-child(7) {
   animation-delay: 0.7s;
 }
-ul li:nth-child(8) {
+.welcome li:nth-child(8) {
   animation-delay: 0.8s;
 }
-ul li:nth-child(9) {
+.welcome li:nth-child(9) {
   animation-delay: 0.9s;
 }
 
 @media screen and (max-width: 800px) {
-  ul li {
+  .welcome li {
     font-size: 550%;
   }
   @media screen and (max-width: 700px) {
-    ul li {
+    .welcome li {
       font-size: 500%;
     }
     @media screen and (max-width: 630px) {
-      ul li {
+      .welcome li {
         font-size: 450%;
       }
       @media screen and (max-width: 550px) {
-        ul li {
+        .welcome li {
           font-size: 400%;
         }
         @media screen and (max-width: 535px) {
-          ul li {
+          .welcome li {
             font-size: 375%;
           }
           @media screen and (max-width: 450px) {
-            ul li {
+            .welcome li {
               font-size: 350%;
             }
             @media screen and (max-width: 435px) {
-              ul li {
+              .welcome li {
                 font-size: 325%;
               }
               @media screen and (max-width: 400px) {
-                ul li {
+                .welcome li {
                   font-size: 300%;
                 }
               }
@@ -96,7 +96,7 @@ ul li:nth-child(9) {
   }
 }
 
-p {
+.button_link p {
   margin: 0 17%;
 }
 
