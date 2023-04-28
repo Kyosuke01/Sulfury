@@ -156,7 +156,7 @@ nav {
   .nav_link_home:hover, .nav_link_reglement:hover, .nav_link_equipe:hover, .nav_link_join:hover, .nav_link_home2:hover, .nav_link_reglement2:hover, .nav_link_equipe2:hover, .nav_link_home3:hover, .nav_link_reglement3:hover, .nav_link_equipe3:hover {
     color: rgb(204, 207, 0);
   }
-  /* début - à mettre en responsive */
+
   .nav_burger {
     display: flex;
     left: 20px;
@@ -164,9 +164,18 @@ nav {
     padding: 15px 20px 15px 0;
     font-size: 25px;
     justify-content: right;
-    cursor: pointer;
   }
-  /* fin */
+
+  .nav_burger p {
+    cursor: pointer;
+    padding: 2px;
+    transition: 0.3s;
+  }
+
+  .nav_burger p:hover {
+    background-color: #5865f270;
+  }
+
   .nav_link_equipe.show_list, .nav_link_reglement.show_list, .nav_link_home.show_list, .nav_link_join.show_list {
     display: flex;
   }
