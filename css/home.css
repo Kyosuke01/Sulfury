@@ -3,7 +3,7 @@ html {
   width: 100%;
   height: 100%;
   /*padding-bottom: 500px;*/
-  /* padding-bottom: 50%; */
+  padding-bottom: 30%;
 }
 
 .present {
@@ -13,6 +13,7 @@ html {
   align-items: center;
   margin: 250px 0 0 150px;
   width: 55%;
+  position: relative;
 }
 
 .present-texte {
@@ -27,9 +28,9 @@ html {
 
 .emoji-wave img {
   position: absolute;
-  right: 10%;
-  top: 200px;
-  width: 30%;
+  right: -60%;
+  top: -200px;
+  width: 60%;
 }
 
 #cursor {
@@ -92,10 +93,10 @@ html {
   }
   @media screen and (max-width: 1410px) {
     .emoji-wave img {
-      top: 520px;
       right: 50%;
+      top: 200px;
+      width: 60%;
       transform: translate(50%, 0);
-      width: 35%;
     }
     .present {
       margin: 250px 0 0 80px;
@@ -108,11 +109,6 @@ html {
     .present #message-container {
       font-size: 80px;
     }
-    @media screen and (max-width: 1030px) {
-      .emoji-wave img {
-        width: 60%;
-      }
-    }
     @media screen and (max-width: 1250px) {
       .present #message-container {
         font-size: 70px;
@@ -124,9 +120,6 @@ html {
         .present {
           margin: 200px 0 0 80px;
         }
-        .emoji-wave img {
-          top: 490px;
-        }
         @media screen and (max-width: 950px) {
           .present {
             width: 80%;
@@ -134,15 +127,9 @@ html {
           .present {
             margin: 150px 0 0 80px;
           }
-          .emoji-wave img {
-            top: 440px;
-          }
           @media screen and (max-width: 670px) {
             .present {
               margin: 150px 0 0 50px;
-            }
-            .emoji-wave img {
-              top: 340px;
             }
             .present #message-container {
               font-size: 40px;
@@ -150,6 +137,9 @@ html {
             #divTexte {
               font-size: 22px;
               height: 23px;
+            }
+            .emoji-wave img {
+              top: 100px;
             }
             @media screen and (max-width: 450px) {
               .present #message-container {
@@ -164,7 +154,7 @@ html {
                   margin: 100px 0 0 30px;
                 }
                 .emoji-wave img {
-                  top: 270px;
+                  top: 80px;
                 }
                 .present #message-container {
                   font-size: 27px;
