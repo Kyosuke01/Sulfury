@@ -31,57 +31,43 @@
 </head>
 
 <body>
-    <header align="center" class="page-header">
-        <img src="images/sulfury.png" alt="logo sulfury" height="100px">
-        <strong>
-            <h1 class="text_sulfury">Sulfury</h1>
-        </strong>
-    </header>
+    <nav class="nav" id="nav">
 
-    <nav>
         <div class="nav_burger">
             <p id="nav_burger">&#x2630;</p>
         </div>
         <ul class="nav_link" id="nav_link">
-            <li><a class="nav_link_home" id="nav_link_home"><i class="fa-solid fa-house"></i>&nbspAccueil</a></li>
-            <li><a class="nav_link_reglement" id="nav_link_reglement" href="reglement.html"><i
-                        class="fa-solid fa-shield-halved"></i>&nbspRèglement</a></li>
-            <li><a class="nav_link_equipe" id="nav_link_equipe" href="equipe.html"><i
+            <li><a href="index.html" class="sulfuryLogo" id="logo_link" onmouseover="changeImage()"
+                    onmouseout="changeImage()">
+                    <img id="logo_sulfury" src="images/sulfury-border.png" alt="sulfury-logo" draggable="false"
+                        oncontextmenu="return false;">
+                    <h1>Sulfury</h1>
+                </a></li>
+            <li><a class="page-select nav_link_home" id="nav_link_home"><i
+                        class="fa-solid fa-house"></i>&nbspAccueil</a></li>
+            <li><a class="nav-select nav_link_reglement" id="nav_link_reglement" href="reglement.html"><i
+                        class="fa-solid fa-shield-halved"></i>&nbspRèglement</a>
+            </li>
+            <li><a class="nav-select nav_link_equipe" id="nav_link_equipe" href="equipe.html"><i
                         class="fa-sharp fa-solid fa-graduation-cap"></i>&nbspÉquipe</a></li>
-            <li><a class="nav_link_join" id="nav_link_join" href="https://discord.gg/VFMfByp3ed" target="_blank"><i
-                        class="fa-solid fa-link"></i>&nbspRejoindre</a></li>
+            <li><a class="nav-select nav_link_join" id="nav_link_join" href="https://discord.gg/VFMfByp3ed"
+                    target="_blank"><i class="fa-solid fa-link"></i>&nbspRejoindre</a></li>
         </ul>
+
     </nav>
 
-    <section>
-
-        <div align="center">
-            <ul class="welcome">
-                <li>B</li>
-                <li>I</li>
-                <li>E</li>
-                <li>N</li>
-                <li>V</li>
-                <li>E</li>
-                <li>N</li>
-                <li>U</li>
-                <li>E</li>
-            </ul>
-
-            <div class="button_link">
-                <p><a href="reglement.html"><button class="btn1"><i
-                                class="fa-solid fa-shield-halved"></i>&nbspRèglement</button></a>
-                </p>
-                <p><a href="equipe.html"><button class="btn2"><i
-                                class="fa-sharp fa-solid fa-graduation-cap"></i>&nbspÉquipe</button></a></p>
-                <p><a href="https://discord.gg/VFMfByp3ed" target="_blank"><button class="btn3"><i
-                                class="fa-solid fa-link"></i>&nbspRejoindre</button></a>
-                </p>
+    <div class="present">
+        <div class="present-texte">
+            <div id="message-container">
+                <span>Serveur</span>
+                <span id="message"></span><span id="cursor"></span>
             </div>
-
+            <div id="divTexte"></div>
         </div>
-
-    </section>
+        <div class="emoji-wave">
+            <img src="images/Fluent_wave.png" alt="Émoji fluent wave" draggable="false">
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://kit.fontawesome.com/cb9da243d3.js" crossorigin="anonymous"></script>
@@ -90,7 +76,7 @@
     <script>
         AOS.init();
     </script>
-    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
     <script src="js/nav_bar.js"></script>
 
 </body>

@@ -1,22 +1,53 @@
-1. Apparence du profil :
+📘 Informations du serveur
 
-	• Ne doit pas contenir de caractères déplacés. (pornographie, homophobie, xénophobie...).
-	• Ne doit pas usurper l’identité d’un tier.
-	• Doit pouvoir être mentionné.
 
-2. Écrits :
-	• Toutes formes de nuisances aux salons de discussions est prohibé (spam, flood).
-	• Les insultes ne doivent pas constituer une forme de défense ou d’attaque.
-	• Tout comme votre avatar, les caractères illisibles/déplacés n’ont pas leur place ici. (propos racistes, discriminatoires...)
-	• Veuillez respecter les sujets des salons. Si vous avez un doute, veuillez vous référer aux descriptions de salon.
-	• Toutes formes de diffamations envers autrui, publique tant que privé, est sévèrement sanctionnable.
-	• Le troll, ou toutes formes de farces non consentantes est interdit.
-	• Aucun trafic marchand ne sera cautionné.
-	• La politesse à toute sa place sur le serveur, en vous remerciant.
-	• Les publicités ne devront atteindre tout membre de ce serveur.
-	• Les liens sont interdits.
-	DONC PAS DE GIF CAR CE SONT DES LIENS
+1. Apparence Du Profil
 
-3. Vocaux :
-	• La nuisance auditive recourra à des sanctions (cris, modificateur de voix, ...).
-	• Veuillez respecter le règlement textuel autant dans le cadre écrit que vocal.
+• Ne doit pas contenir de caractères déplacés. (pornographie, homophobie, xénophobie...).
+• Ne doit pas usurper l’identité d’un tier.
+• Doit pouvoir être mentionné.
+
+
+2. Écrits 📝
+
+• Toutes formes de nuisances aux salons de discussions est prohibé (spam, flood).
+• Les insultes ne doivent pas constituer une forme de défense ou d’attaque.
+• Tout comme votre avatar, les caractères illisibles/déplacés n’ont pas leur place ici. (propos racistes, discriminatoires...)
+• Veuillez respecter les sujets des salons. Si vous avez un doute, veuillez vous référer aux descriptions de salon.
+• Toutes formes de diffamations envers autrui, publique tant que privé, est sévèrement sanctionnable.
+• Le troll, ou toutes formes de farces non consentantes est interdit.
+• Aucun trafic marchand ne sera cautionné.
+• La politesse à toute sa place sur le serveur, en vous remerciant.
+• Les publicités ne devront atteindre tout membre de ce serveur.
+• Les liens sont interdits. DONC PAS DE GIF CAR CE SONT DES LIENS
+
+
+3. Vocaux 🛰️
+
+• La nuisance auditive recourra à des sanctions (cris, modificateur de voix, ...).
+• Veuillez respecter le règlement textuel autant dans le cadre écrit que vocal.
+
+Charte d'utilisation de discord
+
+
+Sanctions Encourues 📩
+
+Voici ici une liste de la pluralité des sanctions que l’équipe du serveur se verront d’utiliser en cas d’infraction :
+
+• Warn
+• Kick
+• Bannissement temporaire
+• Bannissement définitif
+• Mute
+• Mute temporaire
+• [...]
+
+Les modérateurs se réservent le droit de choisir la sanction la plus adéquate en fonction de votre infraction. Les degrés de sanctions sont additionnels à toutes vos infractions. Ne fraudez pas !
+Veuillez vous rediriger dans le salon ⁠#『📜』sanctions pour y retrouver les sanctions automatiques du bot de modération du serveur.
+
+
+Informations Additionnelles
+
+• Vous pouvez décrocher des récompenses de niveau en étant actif sur le serveur. Faîtes la commande -reward dans le salon #⁠『🤖』commandes pour les voir tous !
+• Toutes contestations de sanction juguées inutiles seront accompagnées de sanctions supplémentaires.
+• Cependant, si vous estimez qu’un Modérateur abuse de ses droits, demandez d'avoir un administrateur via le salon #⁠『🎫』tickets.

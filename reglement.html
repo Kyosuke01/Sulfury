@@ -32,27 +32,29 @@
 </head>
 
 <body>
-    <header align="center" class="page-header">
-        <img src="images/sulfury.png" alt="logo sulfury" height="100px">
-        <strong>
-            <h1 class="text_sulfury">Sulfury</h1>
-        </strong>
-    </header>
 
-    <nav>
+    <nav class="nav" id="nav">
+
         <div class="nav_burger">
             <p id="nav_burger">&#x2630;</p>
         </div>
         <ul class="nav_link" id="nav_link">
-            <li><a class="nav_link_home2" id="nav_link_home" href="index.html"><i
+            <li><a href="index.html" class="sulfuryLogo" id="logo_link" onmouseover="changeImage()"
+                    onmouseout="changeImage()">
+                    <img id="logo_sulfury" src="images/sulfury-border.png" alt="sulfury-logo" draggable="false"
+                        oncontextmenu="return false;">
+                    <h1>Sulfury</h1>
+                </a></li>
+            <li><a class="nav-select nav_link_home" id="nav_link_home" href="index.html"><i
                         class="fa-solid fa-house"></i>&nbspAccueil</a></li>
-            <li><a class="nav_link_reglement2" id="nav_link_reglement"><i
+            <li><a class="page-select nav_link_reglement" id="nav_link_reglement"><i
                         class="fa-solid fa-shield-halved"></i>&nbspRèglement</a></li>
-            <li><a class="nav_link_equipe2" id="nav_link_equipe" href="equipe.html"><i
+            <li><a class="nav-select nav_link_equipe" id="nav_link_equipe" href="equipe.html"><i
                         class="fa-sharp fa-solid fa-graduation-cap"></i>&nbspÉquipe</a></li>
-            <li><a class="nav_link_join" id="nav_link_join" href="https://discord.gg/VFMfByp3ed" target="_blank"><i
-                        class="fa-solid fa-link"></i>&nbspRejoindre</a></li>
+            <li><a class="nav-select nav_link_join" id="nav_link_join" href="https://discord.gg/VFMfByp3ed"
+                    target="_blank"><i class="fa-solid fa-link"></i>&nbspRejoindre</a></li>
         </ul>
+
     </nav>
 
     <section class="all_rules">
@@ -226,7 +228,7 @@
             </div>
             <div class="valid" data-aos="flip-up" data-aos-anchor-placement="top-bottom">
                 <img src="images/valid.gif" alt="image-valid">
-                <p>33</p>
+                <p>35</p>
             </div>
         </div>
     </section>
@@ -244,18 +246,6 @@
             </div>
         </center>
     </footer>
-
-    <!-- <footer class="footer">
-        <p class="footer_text"><strong>Téléchargez le règlement de la Sulfury ici :</strong></p>
-        <div class="rules_link">
-            <a href="rules-download/reglement.docx" class="dl-docx" download="Règlement de la Sulfury"
-                target="_blank"><i class="fa-solid fa-download"></i> règlement.docx</a>
-            <a href="rules-download/reglement.pdf" class="dl-pdf" download="Règlement de la Sulfury" target="_blank"><i
-                    class="fa-solid fa-download"></i> règlement.pdf</a>
-            <a href="rules-download/reglement.txt" class="dl-txt" download="Règlement de la Sulfury" target="_blank"><i
-                    class="fa-solid fa-download"></i> règlement.txt</a>
-        </div>
-    </footer> -->
 
     <script src="https://kit.fontawesome.com/cb9da243d3.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
