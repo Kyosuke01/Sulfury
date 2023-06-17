@@ -117,7 +117,6 @@ nav .nav-select:hover {
   }
   nav {
     display: block;
-    position: relative;
   }
   .nav_burger {
     display: flex;
