@@ -92,7 +92,7 @@ html {
   }
   @media screen and (max-width: 1410px) {
     .emoji-wave img {
-      top: 500px;
+      top: 520px;
       right: 50%;
       transform: translate(50%, 0);
       width: 35%;
@@ -108,6 +108,11 @@ html {
     .present #message-container {
       font-size: 80px;
     }
+    @media screen and (max-width: 1030px) {
+      .emoji-wave img {
+        width: 60%;
+      }
+    }
     @media screen and (max-width: 1250px) {
       .present #message-container {
         font-size: 70px;
@@ -120,7 +125,7 @@ html {
           margin: 200px 0 0 80px;
         }
         .emoji-wave img {
-          top: 470px;
+          top: 490px;
         }
         @media screen and (max-width: 950px) {
           .present {
@@ -130,44 +135,44 @@ html {
             margin: 150px 0 0 80px;
           }
           .emoji-wave img {
-            top: 420px;
+            top: 440px;
           }
-        }
-        @media screen and (max-width: 670px) {
-          .present {
-            margin: 150px 0 0 50px;
-          }
-          .emoji-wave img {
-            top: 320px;
-          }
-          .present #message-container {
-            font-size: 40px;
-          }
-          #divTexte {
-            font-size: 20px;
-            height: 21px;
-          }
-          @media screen and (max-width: 450px) {
+          @media screen and (max-width: 670px) {
+            .present {
+              margin: 150px 0 0 50px;
+            }
+            .emoji-wave img {
+              top: 340px;
+            }
             .present #message-container {
-              font-size: 35px;
+              font-size: 40px;
             }
             #divTexte {
-              font-size: 15px;
-              height: 16px;
+              font-size: 22px;
+              height: 23px;
             }
-            @media screen and (max-width: 390px) {
-              .present {
-                margin: 100px 0 0 30px;
-              }
-              .emoji-wave img {
-                top: 250px;
-              }
+            @media screen and (max-width: 450px) {
               .present #message-container {
-                font-size: 27px;
+                font-size: 35px;
               }
               #divTexte {
-                font-size: 7px;
-                height: 8px;
+                font-size: 17px;
+                height: 18px;
+              }
+              @media screen and (max-width: 390px) {
+                .present {
+                  margin: 100px 0 0 30px;
+                }
+                .emoji-wave img {
+                  top: 270px;
+                }
+                .present #message-container {
+                  font-size: 27px;
+                }
+                #divTexte {
+                  font-size: 12px;
+                  height: 13px;
+                }
               }
             }
           }
