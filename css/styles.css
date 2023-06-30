@@ -71,6 +71,17 @@ nav .nav-select:hover {
   list-style-type: none;
 }
 
+.nav_link_join {
+  background-color: #CCCF00;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nav_link_join:hover {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 1200px) {
   nav {
     font-size: 22px;
