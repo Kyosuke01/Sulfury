@@ -20,11 +20,12 @@ nav {
   color: white;
   align-items: center;
   justify-content: space-around;
-  font-size: 25px;
+  font-size: 15px;
   background-color: #0B2816;
   position: sticky;
   top: 0;
   z-index: 5;
+  padding: 0 250px;
 }
 
 nav a {
@@ -40,19 +41,19 @@ nav .nav-select:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 260px;
-  font-size: 30px;
+  width: 200px;
+  font-size: 22px;
 }
 
 .sulfuryLogo img {
-  width: 75px;
+  width: 60px;
 }
 
 .page-select::before {
   content: "";
   display: block;
   position: relative;
-  top: 42.5px;
+  top: 30px;
   height: 3px;
   background: #34c924;
 }
@@ -82,33 +83,18 @@ nav .nav-select:hover {
   background-color: #fff;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   nav {
-    font-size: 22px;
-  }
-  .sulfuryLogo {
-    font-size: 25px;
-    width: 220px;
-  }
-  .sulfuryLogo img {
-    width: 65px;
-  }
-  .page-select::before {
-    top: 35px;
+    padding: 0 150px;
   }
   @media screen and (max-width: 1020px) {
     nav {
-      font-size: 17px;
+      padding: 0 100px;
     }
-    .sulfuryLogo {
-      font-size: 20px;
-      width: 170px;
-    }
-    .sulfuryLogo img {
-      width: 50px;
-    }
-    .page-select::before {
-      top: 30px;
+    @media screen and (max-width: 885px) {
+      nav {
+        padding: 0 50px;
+      }      
     }
   }
 }
@@ -128,6 +114,7 @@ nav .nav-select:hover {
   }
   nav {
     display: block;
+    padding: 0 0;
   }
   .nav_burger {
     display: flex;
@@ -148,7 +135,7 @@ nav .nav-select:hover {
     margin-top: -100px;
   }
   .sulfuryLogo.show_list, .nav_link_home.show_list, .nav_link_reglement.show_list, .nav_link_equipe.show_list, .nav_link_join.show_list {
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     margin: 15px 0;
   }
