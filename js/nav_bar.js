@@ -18,12 +18,3 @@ nav_burger.onclick = function () {
   nav_link_join.classList.toggle("show_list");
   
 };
-
-// function changeImage() {
-//   const image = document.getElementById("logo_sulfury");
-//   if (image.src.match("/images/sulfury-border.png")) {
-//       image.src = "/images/sulfury-yellow.png";
-//   } else {
-//       image.src = "/images/sulfury-border.png";
-//   }
-// }

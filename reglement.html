@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/rules.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </head>
 
 <body>
@@ -228,7 +231,8 @@
             </div>
             <div class="valid" data-aos="flip-up" data-aos-anchor-placement="top-bottom">
                 <img src="images/valid.gif" alt="image-valid">
-                <p>35</p>
+                <span id="counter" data-count="38">0</span>
+
             </div>
         </div>
     </section>
@@ -254,6 +258,8 @@
         AOS.init();
     </script>
     <script src="js/nav_bar.js"></script>
+    <script src="js/counter.js"></script>
+
 </body>
 
 </html>
