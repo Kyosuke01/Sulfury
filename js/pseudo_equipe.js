@@ -4,6 +4,9 @@ const txtCopyKyosuke = document.querySelector(".kyosuke_pseudo");
 const btnCopyKam = document.querySelector(".kam_copy");
 const txtCopyKam = document.querySelector(".kam_pseudo");
 
+const btnCopySoline = document.querySelector(".soline_copy");
+const txtCopySoline = document.querySelector(".soline_pseudo");
+
 const btnCopyLiffux = document.querySelector(".liffux_copy");
 const txtCopyLiffux = document.querySelector(".liffux_pseudo");
 
@@ -15,9 +18,6 @@ const txtCopyRyota = document.querySelector(".ryota_pseudo");
 
 const btnCopyXeinel = document.querySelector(".xeinel_copy");
 const txtCopyXeinel = document.querySelector(".xeinel_pseudo");
-
-const btnCopyNico = document.querySelector(".nico_copy");
-const txtCopyNico = document.querySelector(".nico_pseudo");
 
 const btnCopyEmin = document.querySelector(".emin_copy");
 const txtCopyEmin = document.querySelector(".emin_pseudo");
@@ -47,6 +47,20 @@ btnCopyKam.addEventListener("click", () => {
 
 function showPopupKam() {
   var popup = document.getElementById("popup_kam");
+  popup.style.display = "block";
+  setTimeout(function () {
+    popup.style.display = "none";
+  }, 1000);
+}
+
+// Soline
+
+btnCopySoline.addEventListener("click", () => {
+  navigator.clipboard.writeText(txtCopySoline.innerText);
+});
+
+function showPopupSoline() {
+  var popup = document.getElementById("popup_soline");
   popup.style.display = "block";
   setTimeout(function () {
     popup.style.display = "none";
@@ -103,20 +117,6 @@ btnCopyXeinel.addEventListener("click", () => {
 
 function showPopupXeinel() {
   var popup = document.getElementById("popup_xeinel");
-  popup.style.display = "block";
-  setTimeout(function () {
-    popup.style.display = "none";
-  }, 1000);
-}
-
-// Nico
-
-btnCopyNico.addEventListener("click", () => {
-  navigator.clipboard.writeText(txtCopyNico.innerText);
-});
-
-function showPopupNico() {
-  var popup = document.getElementById("popup_nico");
   popup.style.display = "block";
   setTimeout(function () {
     popup.style.display = "none";
