@@ -19,6 +19,9 @@ const txtCopyRyota = document.querySelector(".ryota_pseudo");
 const btnCopyXeinel = document.querySelector(".xeinel_copy");
 const txtCopyXeinel = document.querySelector(".xeinel_pseudo");
 
+const btnCopyArdea974 = document.querySelector(".ardea974_copy");
+const txtCopyArdea974 = document.querySelector(".ardea974_pseudo");
+
 const btnCopyEmin = document.querySelector(".emin_copy");
 const txtCopyEmin = document.querySelector(".emin_pseudo");
 
@@ -117,6 +120,20 @@ btnCopyXeinel.addEventListener("click", () => {
 
 function showPopupXeinel() {
   var popup = document.getElementById("popup_xeinel");
+  popup.style.display = "block";
+  setTimeout(function () {
+    popup.style.display = "none";
+  }, 1000);
+}
+
+// Ardea
+
+btnCopyArdea974.addEventListener("click", () => {
+  navigator.clipboard.writeText(txtCopyArdea974.innerText);
+});
+
+function showPopupArdea974() {
+  var popup = document.getElementById("popup_ardea974");
   popup.style.display = "block";
   setTimeout(function () {
     popup.style.display = "none";
