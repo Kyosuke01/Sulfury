@@ -23,36 +23,32 @@
 }
 
 .role {
-  background: linear-gradient(
-    45deg,
-    #9c9e9f 20%,
-    #c2c4c6 40%,
-    #eff0f0 60%,
-    #c3c5c7 80%,
-    #545356 100%
-  );
+  background: linear-gradient(45deg,
+      #9c9e9f 20%,
+      #c2c4c6 40%,
+      #eff0f0 60%,
+      #c3c5c7 80%,
+      #545356 100%);
   padding: 5px 0px;
   margin: -2% 0% 0%;
   font-size: 110%;
   text-shadow:
     -0.5px -0.5px 0 #000,
-     0.5px -0.5px 0 #000,
-    -0.5px  0.5px 0 #000,
-     0.5px  0.5px 0 #000;
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
 }
 
 .pseudo {
   font-weight: 900;
   padding: 5px 0px;
   margin: 5% 10%;
-  background: linear-gradient(
-    45deg,
-    #c28c32 20%,
-    #d6b96b 40%,
-    #fbf3b3 60%,
-    #c09c2e 80%,
-    #b17e1f 100%
-  );
+  background: linear-gradient(45deg,
+      #c28c32 20%,
+      #d6b96b 40%,
+      #fbf3b3 60%,
+      #c09c2e 80%,
+      #b17e1f 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   cursor: pointer;
@@ -83,13 +79,11 @@ body div div div i {
 }
 
 .fa-twitter:hover {
-  background: linear-gradient(
-    45deg,
-    #139cea 25%,
-    #147fef 50%,
-    #1957f6 75%,
-    #1d34fe 100%
-  );
+  background: linear-gradient(45deg,
+      #139cea 25%,
+      #147fef 50%,
+      #1957f6 75%,
+      #1d34fe 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   opacity: 100%;
@@ -103,67 +97,57 @@ body div div div i {
 }
 
 .fa-youtube:hover {
-  background: linear-gradient(
-    45deg,
-    #4c0002 20%,
-    #9e0001 40%,
-    #bb0b0b 60%,
-    #6e0000 80%,
-    #410000 100%
-  );
+  background: linear-gradient(45deg,
+      #4c0002 20%,
+      #9e0001 40%,
+      #bb0b0b 60%,
+      #6e0000 80%,
+      #410000 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   opacity: 100%;
 }
 
 .fa-twitch:hover {
-  background: linear-gradient(
-    45deg,
-    #b800fb 20%,
-    #9001f8 40%,
-    #6900ba 60%,
-    #38026d 80%,
-    #12122b 100%
-  );
+  background: linear-gradient(45deg,
+      #b800fb 20%,
+      #9001f8 40%,
+      #6900ba 60%,
+      #38026d 80%,
+      #12122b 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   opacity: 100%;
 }
 
 .fa-spotify:hover {
-  background: linear-gradient(
-    45deg,
-    #f8f7cc 20%,
-    #c5e87f 40%,
-    #84bb49 60%,
-    #50962a 80%,
-    #006622 100%
-  );
+  background: linear-gradient(45deg,
+      #f8f7cc 20%,
+      #c5e87f 40%,
+      #84bb49 60%,
+      #50962a 80%,
+      #006622 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   opacity: 100%;
 }
 
 .fa-github:hover {
-  background: linear-gradient(
-    45deg,
-    #5d5d5f 33.3%,
-    #3c3d40 66.6%,
-    #0c0d10 100%
-  );
+  background: linear-gradient(45deg,
+      #5d5d5f 33.3%,
+      #3c3d40 66.6%,
+      #0c0d10 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   opacity: 100%;
 }
 
 .fa-reddit:hover {
-  background: linear-gradient(
-    45deg,
-    #f4e794 25%,
-    #efc340 50%,
-    #e99503 75%,
-    #e2581a 100%
-  );
+  background: linear-gradient(45deg,
+      #f4e794 25%,
+      #efc340 50%,
+      #e99503 75%,
+      #e2581a 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   opacity: 100%;
@@ -181,13 +165,11 @@ body div div div i {
 }
 
 .fa-steam:hover {
-  background: linear-gradient(
-    45deg,
-    #0054ab 25%,
-    #003e89 50%,
-    #01215c 75%,
-    #000938 100%
-  );
+  background: linear-gradient(45deg,
+      #0054ab 25%,
+      #003e89 50%,
+      #01215c 75%,
+      #000938 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   opacity: 100%;
@@ -240,25 +222,21 @@ body div div div i {
 
 #popup_kyosuke,
 #popup_kam,
-#popup_soline,
 #popup_liffux,
 #popup_quentin,
 #popup_ryota,
 #popup_xeinel,
 #popup_ardea974,
 #popup_emin,
-#popup_ninfrast
- {
+#popup_ninfrast {
   position: absolute;
   color: white;
-  background: linear-gradient(
-    45deg,
-    #c28c32 20%,
-    #d6b96b 40%,
-    #fbf3b3 60%,
-    #c09c2e 80%,
-    #b17e1f 100%
-  );
+  background: linear-gradient(45deg,
+      #c28c32 20%,
+      #d6b96b 40%,
+      #fbf3b3 60%,
+      #c09c2e 80%,
+      #b17e1f 100%);
 
   border-radius: 5px;
   padding: 4px;
