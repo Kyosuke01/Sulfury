@@ -25,6 +25,9 @@ const txtCopyEmin = document.querySelector(".emin_pseudo");
 const btnCopyNinfrast = document.querySelector(".ninfrast_copy");
 const txtCopyNinfrast = document.querySelector(".ninfrast_pseudo");
 
+const btnCopyNktim26 = document.querySelector(".nktim26_copy");
+const txtCopyNktim26 = document.querySelector(".nktim26_pseudo");
+
 // Kyosuke
 
 btnCopyKyosuke.addEventListener("click", () => {
@@ -145,6 +148,20 @@ btnCopyNinfrast.addEventListener("click", () => {
 
 function showPopupNinfrast() {
   var popup = document.getElementById("popup_ninfrast");
+  popup.style.display = "block";
+  setTimeout(function () {
+    popup.style.display = "none";
+  }, 1000);
+}
+
+// Nktim26
+
+btnCopyNktim26.addEventListener("click", () => {
+  navigator.clipboard.writeText(txtCopyNktim26.innerText);
+});
+
+function showPopupNktim26() {
+  var popup = document.getElementById("popup_nktim26");
   popup.style.display = "block";
   setTimeout(function () {
     popup.style.display = "none";
