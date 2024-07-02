@@ -28,6 +28,9 @@ const txtCopyNinfrast = document.querySelector(".ninfrast_pseudo");
 const btnCopyNktim26 = document.querySelector(".nktim26_copy");
 const txtCopyNktim26 = document.querySelector(".nktim26_pseudo");
 
+const btnCopySolinouille = document.querySelector(".solinouille_copy");
+const txtCopySolinouille = document.querySelector(".solinouille_pseudo");
+
 // Kyosuke
 
 btnCopyKyosuke.addEventListener("click", () => {
@@ -162,6 +165,20 @@ btnCopyNktim26.addEventListener("click", () => {
 
 function showPopupNktim26() {
   var popup = document.getElementById("popup_nktim26");
+  popup.style.display = "block";
+  setTimeout(function () {
+    popup.style.display = "none";
+  }, 1000);
+}
+
+// Soline
+
+btnCopySolinouille.addEventListener("click", () => {
+  navigator.clipboard.writeText(txtCopySolinouille.innerText);
+});
+
+function showPopupSolinouille() {
+  var popup = document.getElementById("popup_solinouille");
   popup.style.display = "block";
   setTimeout(function () {
     popup.style.display = "none";
