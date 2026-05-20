@@ -1,172 +1,220 @@
+/* ─── Home page ──────────────────────────────────────────── */
+
 html {
-  background: linear-gradient(to bottom, #0B2816, #143F28);
-  width: 100%;
-  height: 100%;
-  padding-bottom: 30%;
+  background: linear-gradient(160deg, var(--bg-deep) 0%, var(--bg-dark) 100%);
+  min-height: 100%;
 }
 
+/* ─── Hero section ───────────────────────────────────────── */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - var(--nav-height));
+  padding: 0 10vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle radial glow behind text */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(29, 185, 84, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ─── Intro text block ───────────────────────────────────── */
 .present {
-  color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 250px 0 0 150px;
-  width: 55%;
-  position: relative;
+  gap: 40px;
+  color: var(--text);
+  animation: fadeSlideUp 0.7s ease both;
 }
 
 .present-texte {
   display: flex;
   flex-direction: column;
-  font-size: 50px;
+  gap: 10px;
 }
 
-.present #message-container {
-  font-size: 100px;
+/* ─── Fade-in animation ──────────────────────────────────── */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.emoji-wave img {
-  position: absolute;
-  right: -60%;
-  top: -200px;
-  width: 60%;
+/* ─── "Serveur X." heading ───────────────────────────────── */
+#message-container {
+  font-size: clamp(48px, 7vw, 100px);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -2px;
 }
 
+#message {
+  color: var(--accent);
+}
+
+/* ─── Blinking cursor ────────────────────────────────────── */
 #cursor {
   display: inline-block;
-  width: 0.5em;
-  height: 1px;
-  background-color: white;
+  width: 3px;
+  height: 0.82em;
+  background-color: var(--accent);
+  border-radius: 2px;
+  margin-left: 2px;
+  vertical-align: middle;
   animation: blink 1s infinite;
 }
 
 @keyframes blink {
-  50% {
-      opacity: 0;
-  }
+  50% { opacity: 0; }
 }
 
-#message {
-  color: #CCCF00;
-}
-
+/* ─── Scrolling text (afficherTexte) ─────────────────────── */
 #divTexte {
-  display: flex;
-  font-size: 50px;
+  font-size: clamp(18px, 2.5vw, 38px);
+  font-weight: 600;
+  color: var(--text-muted);
   position: relative;
-  height: 51px;
-  width: 100%;
+  height: 1.3em;
   overflow: hidden;
+  letter-spacing: -0.3px;
 }
 
-@media screen and (max-width: 1770px) {
+/* ─── CTA block ──────────────────────────────────────────── */
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  animation: fadeSlideUp 0.7s 0.2s ease both;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: #071410;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 13px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.btn-primary:hover {
+  background: #22d660;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(29, 185, 84, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.btn-secondary:hover {
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+}
+
+/* ─── Wave emoji ─────────────────────────────────────────── */
+.emoji-wave {
+  position: absolute;
+  right: 8vw;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  animation: floatWave 4s ease-in-out infinite;
+}
+
+.emoji-wave img {
+  width: clamp(200px, 28vw, 420px);
+  opacity: 0.92;
+  filter: drop-shadow(0 12px 40px rgba(29, 185, 84, 0.12));
+}
+
+@keyframes floatWave {
+  0%, 100% { transform: translateY(-50%) translateY(0px); }
+  50%       { transform: translateY(-50%) translateY(-12px); }
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+@media screen and (max-width: 1100px) {
+  .hero {
+    padding: 0 7vw;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .hero {
+    padding: 60px 7vw 40px;
+    min-height: auto;
+  }
+
   .present {
-    width: 53%;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  #divTexte {
-    font-size: 40px;
-    height: 41px;
+
+  .emoji-wave {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    align-self: center;
+    margin-top: 40px;
+    animation: floatWave 4s ease-in-out infinite;
   }
-  .present #message-container {
-    font-size: 90px;
+
+  .emoji-wave img {
+    width: clamp(160px, 55vw, 300px);
   }
-  @media screen and (max-width: 1555px) {
-    .present {
-      width: 50%;
-    }
-    #divTexte {
-      font-size: 30px;
-      height: 31px;
-    }
-    .present #message-container {
-      font-size: 80px;
-    }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    padding: 40px 6vw 32px;
   }
-  @media screen and (max-width: 1440px) {
-    .present {
-      width: 45%;
-    }
-    .present #message-container {
-      font-size: 72px;
-    }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  @media screen and (max-width: 1410px) {
-    .emoji-wave img {
-      right: 50%;
-      top: 200px;
-      width: 60%;
-      transform: translate(50%, 0);
-    }
-    .present {
-      margin: 250px 0 0 80px;
-      width: 85%;
-    }
-    #divTexte {
-      font-size: 40px;
-      height: 41px;
-    }
-    .present #message-container {
-      font-size: 80px;
-    }
-    @media screen and (max-width: 1250px) {
-      .present #message-container {
-        font-size: 70px;
-      }
-      @media screen and (max-width: 1100px) {
-        .present #message-container {
-          font-size: 60px;
-        }
-        .present {
-          margin: 200px 0 0 80px;
-        }
-        @media screen and (max-width: 950px) {
-          .present {
-            width: 80%;
-          }
-          .present {
-            margin: 150px 0 0 80px;
-          }
-          @media screen and (max-width: 670px) {
-            .present {
-              margin: 150px 0 0 50px;
-            }
-            .present #message-container {
-              font-size: 40px;
-            }
-            #divTexte {
-              font-size: 22px;
-              height: 23px;
-            }
-            .emoji-wave img {
-              top: 100px;
-            }
-            @media screen and (max-width: 450px) {
-              .present #message-container {
-                font-size: 35px;
-              }
-              #divTexte {
-                font-size: 17px;
-                height: 18px;
-              }
-              @media screen and (max-width: 390px) {
-                .present {
-                  margin: 100px 0 0 30px;
-                }
-                .emoji-wave img {
-                  top: 80px;
-                }
-                .present #message-container {
-                  font-size: 27px;
-                }
-                #divTexte {
-                  font-size: 12px;
-                  height: 13px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+
+  #message-container {
+    letter-spacing: -1px;
   }
 }

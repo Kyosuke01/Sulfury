@@ -1,151 +1,294 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 
-* {
+/* ─── Reset ─────────────────────────────────────────────── */
+*, *::before, *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Retroica';
-  src: url('fonts/Retroica.ttf') format('truetype');
+/* ─── Design tokens ──────────────────────────────────────── */
+:root {
+  --bg-deep:     #071410;
+  --bg-dark:     #0d1f17;
+  --bg-card:     #111f18;
+  --bg-card-alt: #152b20;
+  --accent:      #1db954;
+  --accent-dim:  #158a3e;
+  --accent-glow: rgba(29, 185, 84, 0.18);
+  --yellow:      #c8cf00;
+  --text:        #dff0e6;
+  --text-muted:  #7aab8a;
+  --border:      rgba(29, 185, 84, 0.18);
+  --nav-height:  70px;
+  --radius:      10px;
+  --transition:  0.22s ease;
 }
 
+/* ─── Scrollbar ──────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-card-alt);
+  border-radius: 999px;
+  border: 2px solid var(--bg-deep);
+  transition: background var(--transition);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* ─── Base ───────────────────────────────────────────────── */
 html {
-  font-family: 'Retroica', 'Roboto';
-  background: linear-gradient(to bottom, #0B2816, #143F28);
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(160deg, var(--bg-deep) 0%, var(--bg-dark) 100%) no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text);
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-card-alt) var(--bg-deep);
+  min-height: 100vh;
 }
 
+body {
+  min-height: 100vh;
+  background: transparent;
+}
+
+/* ─── Navbar ─────────────────────────────────────────────── */
 nav {
   display: flex;
-  color: white;
   align-items: center;
-  justify-content: space-around;
-  font-size: 15px;
-  background-color: #0B2816;
+  justify-content: center;
+  height: var(--nav-height);
+  background: rgba(7, 20, 16, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  z-index: 5;
-  padding: 0 250px;
+  z-index: 100;
+  transition: background var(--transition), box-shadow var(--transition);
+}
+
+nav.scrolled {
+  background: rgba(7, 20, 16, 0.95);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
 }
 
 nav a {
-  color: white;
+  color: var(--text);
   text-decoration: none;
 }
 
-nav .nav-select:hover {
-  color: #CCCF00;
-}
-
-.sulfuryLogo {
+/* ─── Nav list ───────────────────────────────────────────── */
+.nav_link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 200px;
-  font-size: 22px;
+  list-style: none;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 24px;
+  gap: 8px;
+}
+
+/* ─── Logo ───────────────────────────────────────────────── */
+.sulfuryLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--text);
+  transition: opacity var(--transition);
+}
+
+.sulfuryLogo:hover {
+  opacity: 0.85;
 }
 
 .sulfuryLogo img {
-  width: 60px;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
-.page-select::before {
-  content: "";
-  display: block;
-  position: relative;
-  top: 30px;
-  height: 3px;
-  background: #34c924;
+.sulfuryLogo h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ─── Nav links ──────────────────────────────────────────── */
+.nav-select {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  transition: color var(--transition), background var(--transition);
+}
+
+.nav-select:hover {
+  color: var(--text);
+  background: var(--accent-glow);
 }
 
 .page-select {
-  color: #CCCF00;
+  color: var(--accent) !important;
+  font-weight: 700;
+  background: transparent !important;
 }
 
-.nav_link {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  padding: 30px 0;
-  list-style-type: none;
-}
-
+/* ─── Join button ────────────────────────────────────────── */
 .nav_link_join {
-  background-color: #CCCF00;
-  color: black;
-  padding: 10px;
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--accent);
+  color: #071410 !important;
+  padding: 8px 16px;
+  border-radius: 999px;
+  letter-spacing: 0.2px;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 
 .nav_link_join:hover {
-  background-color: #fff;
+  background: #22d660;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(29, 185, 84, 0.35);
 }
 
-@media screen and (max-width: 1280px) {
-  nav {
-    padding: 0 150px;
-  }
-  @media screen and (max-width: 1020px) {
-    nav {
-      padding: 0 100px;
-    }
-    @media screen and (max-width: 885px) {
-      nav {
-        padding: 0 50px;
-      }      
-    }
-  }
+.nav_link_join:active {
+  transform: translateY(0);
 }
 
-@media screen and (min-width: 768px) {
-  .nav_link {
-    flex-direction: row;
-  }
-  .nav_burger {
-    display: none;
-  }
+/* ─── Burger (mobile) ────────────────────────────────────── */
+.nav_burger {
+  display: none;
 }
 
+/* ─── Responsive — Tablet/Mobile ────────────────────────── */
 @media screen and (max-width: 768px) {
-  .nav_link {
-    display: none;
-  }
   nav {
     display: block;
-    padding: 0 0;
+    height: auto;
   }
+
   .nav_burger {
     display: flex;
-    padding: 30px 50px 30px 0;
-    font-size: 25px;
-    justify-content: right;
-  }
-  #nav_burger:hover {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 18px 24px;
+    font-size: 22px;
     cursor: pointer;
+    color: var(--text);
+    user-select: none;
   }
-  .page-select::before {
+
+  .nav_burger:hover {
+    color: var(--accent);
+  }
+
+  .nav_link {
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 24px 20px;
+    gap: 4px;
   }
+
   .nav_link.show_list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -100px;
   }
-  .sulfuryLogo.show_list, .nav_link_home.show_list, .nav_link_reglement.show_list, .nav_link_equipe.show_list, .nav_link_join.show_list {
-    font-size: 20px;
-    display: flex;
-    margin: 15px 0;
+
+  .sulfuryLogo {
+    padding: 8px 0;
   }
-  .sulfuryLogo.show_list {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 0;
+
+  .nav-select,
+  .page-select {
+    padding: 10px 12px;
+    width: 100%;
+    font-size: 15px;
   }
-  .nav_link li a h1 {
-    display: none;
+
+  .page-select {
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+
+  .nav_link_join {
+    margin-top: 8px;
+    padding: 10px 20px;
+    font-size: 15px;
+    align-self: flex-start;
+  }
+}
+
+/* ─── Discord Status Badge ───────────────────────────────── */
+.discord-status-badge {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(17, 31, 24, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  user-select: none;
+  text-decoration: none;
+}
+
+.discord-status-badge:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 32px rgba(29, 185, 84, 0.2);
+  color: var(--text);
+}
+
+.discord-status-badge i {
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.discord-status-badge strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.badge-separator {
+  color: rgba(29, 185, 84, 0.3);
+  margin: 0 2px;
+}
+
+@media screen and (max-width: 480px) {
+  .discord-status-badge {
+    bottom: 12px;
+    left: 12px;
+    padding: 6px 12px;
+    font-size: 11px;
   }
 }

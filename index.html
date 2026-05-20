@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Sulfury</title>
-    <meta name="description" content="Official website of the Sulfury">
+    <meta name="description" content="Site officiel du serveur Discord Sulfury — communautaire & chill.">
     <meta property="og:title" content="Sulfury">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kyosuke01.github.io/Sulfury/">
@@ -12,75 +12,83 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
-    <meta property="og:image:alt" content="The-Open-Graph-logo">
+    <meta property="og:image:alt" content="Sulfury logo">
     <meta property="twitter:image" content="https://i.imgur.com/MW3PpIV.png">
-    <meta property="og:description" content="Official website of the Sulfury">
+    <meta property="og:description" content="Site officiel du serveur Discord Sulfury — communautaire & chill.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0DB920">
+    <meta name="theme-color" content="#1db954">
     <meta name="rating" content="safe for kids">
     <meta name="language" content="French">
     <meta name="application-name" content="Sulfury">
     <meta property="og:site_name" content="Sulfury">
-    <meta name="keywords"
-        content="Sulfury, sulfury, Discord, discord, server, Server, serveur, Serveur, community, team">
+    <meta name="keywords" content="Sulfury, Discord, serveur, communauté, équipe">
     <meta name="author" content="Kyosuke">
 
-    <link rel="shortcun icon" href="icons/sulfury.png">
+    <link rel="shortcut icon" href="icons/sulfury.png">
     <link rel="icon" type="image/png" href="icons/favicon.png" sizes="192x192">
     <link rel="apple-touch-icon" href="icons/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="nav" id="nav">
-
-        <div class="nav_burger">
+        <div class="nav_burger" id="nav_burger_wrapper">
             <p id="nav_burger">&#x2630;</p>
         </div>
-        <ul class="nav_link" id="nav_link">
-            <li><a href="index.html" class="sulfuryLogo" id="logo_link" onmouseover="changeImage()"
-                    onmouseout="changeImage()">
-                    <img id="logo_sulfury" src="images/sulfury-border.png" alt="sulfury-logo" draggable="false"
+         <ul class="nav_link" id="nav_link">
+            <li>
+                <a href="./" class="sulfuryLogo" id="logo_link">
+                    <img id="logo_sulfury" src="images/sulfury-border.png" alt="Logo Sulfury" draggable="false"
                         oncontextmenu="return false;">
                     <h1>Sulfury</h1>
-                </a></li>
-            <li><a class="page-select nav_link_home" id="nav_link_home"><i
-                        class="fa-solid fa-house"></i>&nbspAccueil</a></li>
-            <li><a class="nav-select nav_link_reglement" id="nav_link_reglement" href="reglement.html"><i
-                        class="fa-solid fa-shield-halved"></i>&nbspRèglement</a>
+                </a>
             </li>
-            <li><a class="nav-select nav_link_equipe" id="nav_link_equipe" href="equipe.html"><i
-                        class="fa-sharp fa-solid fa-graduation-cap"></i>&nbspÉquipe</a></li>
-            <li><a class="nav_link_join" id="nav_link_join" href="https://discord.gg/VFMfByp3ed" target="_blank"><i
-                        class="fa-solid fa-link"></i>&nbspRejoindre</a></li>
+            <li><a class="page-select nav-select nav_link_home" id="nav_link_home">
+                <i class="fa-solid fa-fire-flame-curved"></i>&nbsp;Accueil</a></li>
+            <li><a class="nav-select nav_link_equipe" id="nav_link_equipe" href="equipe">
+                <i class="fa-solid fa-user-group"></i>&nbsp;Équipe</a></li>
+            <li><a class="nav_link_join" id="nav_link_join" href="https://discord.gg/VFMfByp3ed" target="_blank">
+                <i class="fa-brands fa-discord"></i>&nbsp;Rejoindre</a></li>
         </ul>
-
     </nav>
 
-    <div class="present">
-        <div class="present-texte">
-            <div id="message-container">
-                <span>Serveur</span>
-                <span id="message"></span><span id="cursor"></span>
-            </div>
-            <div id="divTexte"></div>
-        </div>
-        <div class="emoji-wave">
-            <img src="images/Fluent_wave.png" alt="Émoji fluent wave" draggable="false">
-        </div>
-    </div>
+    <section class="hero">
+        <div class="present">
+            <div class="present-texte">
+                <div id="message-container">
+                    <span>Serveur </span><span id="message"></span><span id="cursor"></span>
+                </div>
+                <div id="divTexte"></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+                <div class="hero-cta">
+                    <a class="btn-primary" href="https://discord.gg/VFMfByp3ed" target="_blank">
+                        <i class="fa-brands fa-discord"></i> Rejoindre le serveur
+                    </a>
+                    <a class="btn-secondary" href="equipe">
+                        <i class="fa-solid fa-users"></i> L'équipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="emoji-wave">
+            <img src="images/Fluent_wave.png" alt="Émoji vague" draggable="false">
+        </div>
+    </section>
+
     <script src="https://kit.fontawesome.com/cb9da243d3.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({ once: true, duration: 600, easing: 'ease-out' });
     </script>
     <script src="js/home.js"></script>
     <script src="js/nav_bar.js"></script>
-
 </body>
 
 </html>

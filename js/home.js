@@ -1,8 +1,8 @@
-// Textes qui s'écrivent en jaune
-
+// ─── Typewriter — texte jaune ─────────────────────────────
 var messages = [
     "communautaire.",
-    "chill."
+    "chill.",
+    "sympa."
 ];
 
 var messageContainer = document.getElementById("message");
@@ -15,9 +15,9 @@ function typeMessage() {
     if (currentLetter < messages[currentMessage].length) {
         messageContainer.innerHTML += messages[currentMessage].charAt(currentLetter);
         currentLetter++;
-        setTimeout(typeMessage, 50);
+        setTimeout(typeMessage, 55);
     } else {
-        setTimeout(eraseMessage, 2000);
+        setTimeout(eraseMessage, 2200);
     }
 }
 
@@ -25,48 +25,49 @@ function eraseMessage() {
     if (currentLetter >= 0) {
         messageContainer.innerHTML = messages[currentMessage].substring(0, currentLetter);
         currentLetter--;
-        setTimeout(eraseMessage, 30);
+        setTimeout(eraseMessage, 28);
     } else {
-        currentMessage++;
-        if (currentMessage >= messages.length) {
-            currentMessage = 0;
-        }
+        currentMessage = (currentMessage + 1) % messages.length;
         setTimeout(typeMessage, 500);
     }
 }
 
 typeMessage();
 
-// Textes qui apparaissent du haut pour repartir vers le bas
-
+// ─── Texte défilant vertical ──────────────────────────────
 var textes = [
-"Amusez-vous !",
-"Venez discuter !"
+    "Amusez-vous !",
+    "Venez discuter !",
+    "Rejoignez-nous !"
 ];
 var tempsAffichage = 2000;
-var tempsAnimation = 1000;
+var tempsAnimation = 800;
 var indexTexte = 0;
 var divTexte = document.getElementById("divTexte");
 
 function afficherTexte() {
-var texte = textes[indexTexte];
-var divTexteAnim = document.createElement("div");
-divTexteAnim.innerHTML = texte;
-divTexteAnim.style.position = "absolute";
-divTexteAnim.style.top = "-100%";
-divTexteAnim.style.transition = "top " + tempsAnimation + "ms";
-divTexte.appendChild(divTexteAnim);
-setTimeout(function() {
-    divTexteAnim.style.top = "0";
-}, 50);
-setTimeout(function() {
-    divTexteAnim.style.top = "100%";
-    setTimeout(function() {
-    divTexte.removeChild(divTexteAnim);
-    indexTexte = (indexTexte + 1) % textes.length;
-    setTimeout(afficherTexte, tempsAnimation);
-    }, tempsAnimation);
-}, tempsAffichage);
+    var texte = textes[indexTexte];
+    var divTexteAnim = document.createElement("div");
+    divTexteAnim.innerHTML = texte;
+    divTexteAnim.style.position = "absolute";
+    divTexteAnim.style.top = "-100%";
+    divTexteAnim.style.transition = "top " + tempsAnimation + "ms cubic-bezier(0.4, 0, 0.2, 1)";
+    divTexte.appendChild(divTexteAnim);
+
+    requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+            divTexteAnim.style.top = "0";
+        });
+    });
+
+    setTimeout(function () {
+        divTexteAnim.style.top = "100%";
+        setTimeout(function () {
+            if (divTexteAnim.parentNode) divTexte.removeChild(divTexteAnim);
+            indexTexte = (indexTexte + 1) % textes.length;
+            setTimeout(afficherTexte, 60);
+        }, tempsAnimation);
+    }, tempsAffichage);
 }
 
-setTimeout(afficherTexte, 250);
+setTimeout(afficherTexte, 350);
