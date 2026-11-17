@@ -26,13 +26,6 @@
 .live strong { color: var(--cream); font-weight: 650; font-variant-numeric: tabular-nums; }
 .dot {
   width: 8px; height: 8px; border-radius: 50%; background: var(--sulfur);
-  box-shadow: 0 0 0 0 rgba(227, 223, 72, .6);
-  animation: ping 2.4s ease-out infinite;
-}
-@keyframes ping {
-  0%   { box-shadow: 0 0 0 0 rgba(227, 223, 72, .55); }
-  70%, 100% { box-shadow: 0 0 0 10px rgba(227, 223, 72, 0); }
-}
 
 .hero-title {
   margin-top: 28px;
