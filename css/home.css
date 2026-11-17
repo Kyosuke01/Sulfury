@@ -81,10 +81,9 @@
   transform: translate(var(--px, 0), var(--py, 0));
   transition: transform .5s var(--ease);
 }
-/* Le logo est livré sur un rond blanc : « multiply » le fond blanc disparaît, les feuilles restent. */
+/* Logo pré-cuit sur le jaune soufre (sulfury-disc.png) : pas de mix-blend-mode à recalculer pendant le scroll. */
 .disc-logo {
   width: 96%; height: 96%; object-fit: contain;
-  mix-blend-mode: multiply;
   transform: rotate(var(--rot, 0deg));
   will-change: transform;
 }

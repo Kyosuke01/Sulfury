@@ -25,7 +25,7 @@
   transition: transform .5s var(--ease);
   animation: pop 1.2s var(--ease) .1s both;
 }
-.head-art-disc img { width: 96%; height: auto; aspect-ratio: 1; mix-blend-mode: multiply; }
+.head-art-disc img { width: 96%; height: auto; aspect-ratio: 1; }
 @keyframes pop { from { opacity: 0; scale: .9; } }
 .page-head .kicker span { font-size: 15px; }
 .page-head h1 {
