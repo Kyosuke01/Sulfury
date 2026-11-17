@@ -29,3 +29,6 @@ tmp/
 temp/
 .temp/
 .tmp/
+
+# IA
+.claude
