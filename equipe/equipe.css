@@ -1,0 +1,155 @@
+/* ═══════════════════════════════════════════════════════════
+   Sulfury — page Équipe
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── En-tête ────────────────────────────────────────────── */
+.page-head { position: relative; overflow-x: clip; padding-block: clamp(48px, 8vw, 112px) clamp(24px, 4vw, 56px); }
+.page-head .wrap { position: relative; z-index: 1; }
+
+/* Disque soufre + cercles, écho de l'affiche de l'accueil */
+.head-art {
+  position: absolute; right: var(--gutter); top: 50%;
+  width: clamp(220px, 30vw, 440px); aspect-ratio: 1;
+  translate: 0 -50%; pointer-events: none;
+}
+.head-art-rings { position: absolute; inset: 0; z-index: -1; }
+.head-art-rings i { position: absolute; border: 1px solid var(--rule); border-radius: 50%; }
+.head-art-rings i:nth-child(1) { inset: -14%; }
+.head-art-rings i:nth-child(2) { inset: -34%; opacity: .6; }
+.head-art-rings i:nth-child(3) { inset: -58%; opacity: .3; }
+.head-art-disc {
+  position: absolute; inset: 0; border-radius: 50%;
+  background: var(--sulfur); isolation: isolate;
+  display: grid; place-items: center;
+  transform: translate(var(--px, 0px), var(--py, 0px));
+  transition: transform .5s var(--ease);
+  animation: pop 1.2s var(--ease) .1s both;
+}
+.head-art-disc img { width: 96%; height: auto; aspect-ratio: 1; mix-blend-mode: multiply; }
+@keyframes pop { from { opacity: 0; scale: .9; } }
+.page-head .kicker span { font-size: 15px; }
+.page-head h1 {
+  margin-block: 24px 28px; max-width: 13ch;
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(2.7rem, 6.4vw + .4rem, 6.6rem); line-height: .98; letter-spacing: -.03em;
+  animation: rise .9s var(--ease) both;
+}
+.page-head h1 em { font-style: normal; color: var(--sulfur); }
+@keyframes rise { from { opacity: 0; transform: translateY(26px); } }
+
+/* ─── Groupes ────────────────────────────────────────────── */
+.group { padding-block: clamp(28px, 5vw, 64px); }
+.group-head {
+  display: flex; align-items: baseline; gap: 18px;
+  padding-bottom: 18px; margin-bottom: clamp(32px, 4.5vw, 56px);
+  border-bottom: 1px solid var(--rule);
+}
+.group-head h2 {
+  font-family: var(--font-display); font-weight: 400; letter-spacing: -.01em;
+  font-size: clamp(1.7rem, 1.6vw + 1rem, 2.5rem); line-height: 1.1;
+}
+.group-count { font-size: 14px; font-weight: 600; color: var(--sulfur); font-variant-numeric: tabular-nums; }
+
+.members {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: clamp(44px, 5vw, 68px) 32px;
+}
+
+/* ─── Membre ─────────────────────────────────────────────── */
+.member { display: flex; flex-direction: column; gap: 26px; min-width: 0; }
+
+/* Photo en arche, comme une fenêtre de serre */
+.member-photo {
+  position: relative; overflow: hidden; aspect-ratio: 4 / 5; background: var(--moss);
+  border-radius: 50% 50% 12px 12px / 40% 40% 12px 12px;
+  outline: 1px solid var(--rule); outline-offset: 7px;
+  transition: outline-color .3s, outline-offset .45s var(--ease);
+}
+.member-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
+.member:hover .member-photo { outline-color: var(--sulfur); outline-offset: 11px; }
+.member:hover .member-photo img { transform: scale(1.05); }
+
+.member-body { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+
+.role {
+  display: inline-flex; align-items: center; gap: 9px;
+  font-size: 12px; font-weight: 650; letter-spacing: .14em; text-transform: uppercase; color: var(--sage);
+}
+.role::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--role, var(--sage)); }
+[data-role="owner"]   { --role: #e61111; }
+[data-role="founder"] { --role: #c89e00; }
+[data-role="admin"]   { --role: #df611e; }
+[data-role="mod"]     { --role: #5865f2; }
+
+/* Pseudo = bouton « copier » */
+.handle {
+  display: inline-flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px;
+  margin-top: 8px; text-align: left;
+  font-family: var(--font-display); font-size: 1.6rem; line-height: 1.15; letter-spacing: -.01em;
+  overflow-wrap: break-word;
+  transition: color .2s;
+}
+.handle:hover, .handle:focus-visible { color: var(--sulfur); }
+
+/* Réseaux : grille de 4 colonnes */
+.socials { display: grid; grid-template-columns: repeat(4, 40px); gap: 6px 4px; margin: 14px 0 0 -8px; }
+.socials li[hidden] { display: none; }
+.socials li.fresh { animation: rise .45s var(--ease) both; }
+.socials a, .socials-toggle {
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px;
+  font-size: 17px; color: var(--sage); text-decoration: none;
+  transition: color .2s, background .2s, border-color .2s, transform .3s var(--ease);
+}
+.socials a:hover { color: var(--ink); background: var(--sulfur); transform: translateY(-3px); }
+/* « + X » entre pointillés */
+.socials-toggle { border: 1.5px dashed rgba(159, 183, 168, .55); font-size: 13px; font-weight: 650; }
+.socials-toggle:hover { color: var(--sulfur); border-color: var(--sulfur); }
+.private { display: inline-flex; align-items: center; gap: 9px; margin-top: 18px; font-size: 14px; color: var(--sage); opacity: .7; }
+.private i { font-size: 12px; }
+
+/* ─── Direction : cartes larges ──────────────────────────── */
+.members-lead { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 48px; }
+.members-lead .member { flex-direction: row; align-items: flex-end; gap: clamp(24px, 3vw, 40px); }
+.members-lead .member-photo { flex: 0 0 clamp(150px, 19vw, 250px); }
+.members-lead .member-body { flex: 1; padding-bottom: 6px; }
+.members-lead .handle { font-size: clamp(1.8rem, 1.4vw + 1.2rem, 2.5rem); }
+
+/* ─── Appel final ────────────────────────────────────────── */
+.join { background: var(--cream); color: var(--ink); margin-top: clamp(24px, 4vw, 56px); padding-block: clamp(64px, 9vw, 120px); }
+.join-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 48px; }
+.join h2 {
+  font-family: var(--font-display); font-weight: 400; letter-spacing: -.03em;
+  font-size: clamp(2.4rem, 5vw + .6rem, 5rem); line-height: 1; max-width: 14ch;
+}
+
+/* ─── Mobile ─────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .members-lead { grid-template-columns: 1fr; }
+}
+@media (max-width: 860px) {
+  .head-art { top: 24px; width: 34vw; translate: none; }
+}
+@media (max-width: 560px) {
+  .head-art { display: none; }
+}
+@media (max-width: 520px) {
+  .members { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 20px; }
+  .members-lead { grid-template-columns: 1fr; }
+  .members-lead .member { flex-direction: column; align-items: stretch; }
+  .members-lead .member-photo { flex: none; width: min(70%, 260px); }
+  .handle { font-size: 1.3rem; }
+  .join .btn { width: 100%; justify-content: center; }
+}
+
+/* ─── Message « pseudo copié » (fixé au bas de l'écran) ──── */
+.toast {
+  position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); z-index: 300;
+  width: max-content; max-width: calc(100vw - 32px);
+  padding: 14px 22px; border-radius: 12px;
+  background: var(--sulfur); color: var(--ink); font-weight: 650; font-size: 15px; text-align: center;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .4);
+  opacity: 0; visibility: hidden; transform: translate(-50%, 16px);
+  transition: opacity .25s, transform .35s var(--ease), visibility .25s;
+  pointer-events: none;
+}
+.toast.show { opacity: 1; visibility: visible; transform: translate(-50%, 0); }

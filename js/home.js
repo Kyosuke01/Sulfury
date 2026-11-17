@@ -1,73 +1,83 @@
-// ─── Typewriter — texte jaune ─────────────────────────────
-var messages = [
-    "communautaire.",
-    "chill.",
-    "sympa."
-];
+// ═══════════════════════════════════════════════════════════
+// Sulfury — accueil : machine à écrire + mouvements de l'affiche
+// ═══════════════════════════════════════════════════════════
+(function () {
+    "use strict";
 
-var messageContainer = document.getElementById("message");
-var cursor = document.getElementById("cursor");
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-let currentMessage = 0;
-let currentLetter = 0;
+    // ─── Machine à écrire ─────────────────────────────────
+    // Le premier mot est déjà dans le HTML (lisible sans JS) : on l'efface, puis on enchaîne.
+    var words = ["communautaire.", "chill.", "sympa."];
+    var target = document.getElementById("message");
+    var index = 0;
+    var length = words[0].length;
 
-function typeMessage() {
-    if (currentLetter < messages[currentMessage].length) {
-        messageContainer.innerHTML += messages[currentMessage].charAt(currentLetter);
-        currentLetter++;
-        setTimeout(typeMessage, 55);
-    } else {
-        setTimeout(eraseMessage, 2200);
+    function type() {
+        if (length < words[index].length) {
+            length++;
+            target.textContent = words[index].slice(0, length);
+            setTimeout(type, 70);
+        } else {
+            setTimeout(erase, 2300);
+        }
     }
-}
 
-function eraseMessage() {
-    if (currentLetter >= 0) {
-        messageContainer.innerHTML = messages[currentMessage].substring(0, currentLetter);
-        currentLetter--;
-        setTimeout(eraseMessage, 28);
-    } else {
-        currentMessage = (currentMessage + 1) % messages.length;
-        setTimeout(typeMessage, 500);
+    function erase() {
+        if (length > 0) {
+            length--;
+            target.textContent = words[index].slice(0, length);
+            setTimeout(erase, 32);
+        } else {
+            index = (index + 1) % words.length;
+            setTimeout(type, 350);
+        }
     }
-}
 
-typeMessage();
+    if (target && !reduceMotion) setTimeout(erase, 2600);
 
-// ─── Texte défilant vertical ──────────────────────────────
-var textes = [
-    "Amusez-vous !",
-    "Venez discuter !",
-    "Rejoignez-nous !"
-];
-var tempsAffichage = 2000;
-var tempsAnimation = 800;
-var indexTexte = 0;
-var divTexte = document.getElementById("divTexte");
+    if (reduceMotion) return;
 
-function afficherTexte() {
-    var texte = textes[indexTexte];
-    var divTexteAnim = document.createElement("div");
-    divTexteAnim.innerHTML = texte;
-    divTexteAnim.style.position = "absolute";
-    divTexteAnim.style.top = "-100%";
-    divTexteAnim.style.transition = "top " + tempsAnimation + "ms cubic-bezier(0.4, 0, 0.2, 1)";
-    divTexte.appendChild(divTexteAnim);
+    // ─── Affiche : parallaxe souris + rotation au scroll ──
+    var hero = document.querySelector(".hero-bleed");
+    var poster = document.getElementById("poster");
+    var discLogo = document.getElementById("disc-logo");
+    var ticking = false;
+    var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
-    requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-            divTexteAnim.style.top = "0";
+    function update() {
+        ticking = false;
+        var y = window.scrollY;
+        var vh = window.innerHeight;
+
+        if (discLogo && y < vh * 1.5) {
+            discLogo.style.setProperty("--rot", (y * 0.045).toFixed(2) + "deg");
+        }
+
+    }
+
+    function requestUpdate() {
+        if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(update);
+        }
+    }
+
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
+    update();
+
+    if (hero && poster && finePointer) {
+        hero.addEventListener("pointermove", function (e) {
+            var r = hero.getBoundingClientRect();
+            var dx = (e.clientX - (r.left + r.width * 0.7)) / r.width;
+            var dy = (e.clientY - (r.top + r.height * 0.5)) / r.height;
+            poster.style.setProperty("--px", (dx * 22).toFixed(1) + "px");
+            poster.style.setProperty("--py", (dy * 22).toFixed(1) + "px");
         });
-    });
-
-    setTimeout(function () {
-        divTexteAnim.style.top = "100%";
-        setTimeout(function () {
-            if (divTexteAnim.parentNode) divTexte.removeChild(divTexteAnim);
-            indexTexte = (indexTexte + 1) % textes.length;
-            setTimeout(afficherTexte, 60);
-        }, tempsAnimation);
-    }, tempsAffichage);
-}
-
-setTimeout(afficherTexte, 350);
+        hero.addEventListener("pointerleave", function () {
+            poster.style.setProperty("--px", "0px");
+            poster.style.setProperty("--py", "0px");
+        });
+    }
+})();

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Sulfury</title>
+    <title>Sulfury — Serveur Discord communautaire</title>
     <meta name="description" content="Site officiel du serveur Discord Sulfury — communautaire & chill.">
     <meta property="og:title" content="Sulfury">
     <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
     <meta property="twitter:image" content="https://i.imgur.com/MW3PpIV.png">
     <meta property="og:description" content="Site officiel du serveur Discord Sulfury — communautaire & chill.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#1db954">
+    <meta name="theme-color" content="#0a1511">
     <meta name="rating" content="safe for kids">
     <meta name="language" content="French">
     <meta name="application-name" content="Sulfury">
@@ -28,67 +28,165 @@
     <link rel="icon" type="image/png" href="icons/favicon.png" sizes="192x192">
     <link rel="apple-touch-icon" href="icons/favicon.ico">
 
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="nav" id="nav">
-        <div class="nav_burger" id="nav_burger_wrapper">
-            <p id="nav_burger">&#x2630;</p>
-        </div>
-         <ul class="nav_link" id="nav_link">
-            <li>
-                <a href="./" class="sulfuryLogo" id="logo_link">
-                    <img id="logo_sulfury" src="images/sulfury-border.png" alt="Logo Sulfury" draggable="false"
-                        oncontextmenu="return false;">
-                    <h1>Sulfury</h1>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+
+    <header class="nav" id="nav">
+        <div class="nav-inner">
+            <a class="brand" href="index.html">
+                <img src="images/sulfury-border.png" alt="" width="38" height="38" draggable="false">
+                <span>Sulfury</span>
+            </a>
+            <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+                aria-controls="menu"><span></span><span></span></button>
+            <nav class="menu" id="menu" aria-label="Navigation principale">
+                <a href="index.html" aria-current="page">Accueil</a>
+                <a href="equipe/index.html">Équipe</a>
+                <a class="btn btn-sm" href="https://discord.gg/VFMfByp3ed" target="_blank" rel="noopener">
+                    Rejoindre
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
                 </a>
-            </li>
-            <li><a class="page-select nav-select nav_link_home" id="nav_link_home">
-                <i class="fa-solid fa-fire-flame-curved"></i>&nbsp;Accueil</a></li>
-            <li><a class="nav-select nav_link_equipe" id="nav_link_equipe" href="equipe">
-                <i class="fa-solid fa-user-group"></i>&nbsp;Équipe</a></li>
-            <li><a class="nav_link_join" id="nav_link_join" href="https://discord.gg/VFMfByp3ed" target="_blank">
-                <i class="fa-brands fa-discord"></i>&nbsp;Rejoindre</a></li>
-        </ul>
-    </nav>
+            </nav>
+        </div>
+    </header>
 
-    <section class="hero">
-        <div class="present">
-            <div class="present-texte">
-                <div id="message-container">
-                    <span>Serveur </span><span id="message"></span><span id="cursor"></span>
+    <main id="contenu">
+
+        <!-- ═════════ Héros ═════════ -->
+        <div class="hero-bleed">
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="live rise" id="live" hidden>
+                        <span class="dot" aria-hidden="true"></span>
+                        <span><strong data-stat="online">0</strong> en ligne maintenant</span>
+                    </p>
+
+                    <h1 class="hero-title">
+                        <span class="sr-only">Serveur Discord communautaire, chill et sympa.</span>
+                        <span class="line" aria-hidden="true"><span style="--d:.05s">Serveur</span></span>
+                        <span class="line" aria-hidden="true"><span class="typed" style="--d:.17s"><span id="message">communautaire.</span><span id="cursor"></span></span></span>
+                    </h1>
+
+                    <p class="hero-lead rise" style="--i:2">
+                        Un endroit où l'on vient <em>discuter</em> et <em>s'amuser</em>, sans se prendre la tête.
+                    </p>
+
+                    <div class="hero-cta rise" style="--i:3">
+                        <a class="btn btn-lg" href="https://discord.gg/VFMfByp3ed" target="_blank" rel="noopener">
+                            Rejoindre le serveur
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+                        </a>
+                        <a class="link-arrow" href="equipe/index.html">
+                            Rencontrer l'équipe
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" /></svg>
+                        </a>
+                    </div>
                 </div>
-                <div id="divTexte"></div>
 
-                <div class="hero-cta">
-                    <a class="btn-primary" href="https://discord.gg/VFMfByp3ed" target="_blank">
-                        <i class="fa-brands fa-discord"></i> Rejoindre le serveur
+                <div class="poster" id="poster" aria-hidden="true">
+                    <div class="poster-rings"><i></i><i></i><i></i></div>
+                    <div class="disc">
+                        <img class="disc-logo" id="disc-logo" src="images/sulfury.png" alt="" width="512" height="512"
+                            draggable="false">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ═════════ 01 — Chiffres ═════════ -->
+        <section class="section stats" id="chiffres">
+            <div class="wrap">
+                <div class="stats-top reveal">
+                    <p class="kicker"><span>01</span> En ce moment</p>
+                </div>
+                <dl class="stat-row">
+                    <div class="stat reveal">
+                        <dt>Membres</dt>
+                        <dd data-stat="total" data-fallback="70">70</dd>
+                    </div>
+                    <div class="stat reveal" style="--i:1">
+                        <dt>En ligne</dt>
+                        <dd data-stat="online" data-fallback="14">14</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ═════════ 02 — Équipe ═════════ -->
+        <section class="section" id="equipe">
+            <div class="wrap crew-grid">
+                <div class="reveal">
+                    <p class="kicker"><span>02</span> L'équipe</p>
+                    <h2 class="section-title">Une équipe au service de la <em>communauté</em>.</h2>
+                    <p class="note">Le propriétaire, les administrateurs et les modérateurs assurent la gestion du serveur et le respect de ses règles.</p>
+                    <a class="link-arrow" href="equipe/index.html">
+                        Voir toute l'équipe
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" /></svg>
                     </a>
-                    <a class="btn-secondary" href="equipe">
-                        <i class="fa-solid fa-users"></i> L'équipe
+                </div>
+
+                <ul class="faces reveal" style="--i:1" aria-label="Membres de l'équipe">
+                    <li><img src="equipe/pp-discord/kyosuke.jpg" alt="ky0suke." loading="lazy" draggable="false"></li>
+                    <li><img src="equipe/pp-discord/kam.jpg" alt="kamoumoute" loading="lazy" draggable="false"></li>
+                    <li><img src="equipe/pp-discord/solinouille.jpg" alt="solinouille" loading="lazy" draggable="false"></li>
+                    <li><img src="equipe/pp-discord/liffux.jpg" alt="lifuxx." loading="lazy" draggable="false"></li>
+                    <li><img src="equipe/pp-discord/quentin.jpg" alt="quentin94200" loading="lazy" draggable="false"></li>
+                    <li><img src="equipe/pp-discord/ryota.jpg" alt="Ryota" loading="lazy" draggable="false"></li>
+                    <li><img src="equipe/pp-discord/xeinel.jpg" alt="xeinel" loading="lazy" draggable="false"></li>
+                    <li><img src="equipe/pp-discord/nktim26.jpg" alt="nktim26" loading="lazy" draggable="false"></li>
+                    <li><img src="equipe/pp-discord/ardea974.jpg" alt="ardea974" loading="lazy" draggable="false"></li>
+                    <li><img src="equipe/pp-discord/serasker-sinan.jpg" alt="sadrazamsinan" loading="lazy" draggable="false"></li>
+                    <li><img src="equipe/pp-discord/ninfrast.jpg" alt="ikari8633" loading="lazy" draggable="false"></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═════════ Appel final ═════════ -->
+        <section class="join" id="rejoindre">
+            <div class="wrap join-grid">
+                <p class="kicker reveal"><span>03</span> Rejoindre</p>
+                <h2 class="reveal">On vous garde une place.</h2>
+                <div class="join-meta reveal" style="--i:1">
+                    <a class="btn btn-ink btn-lg" href="https://discord.gg/VFMfByp3ed" target="_blank" rel="noopener">
+                        Rejoindre le serveur
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
                     </a>
+                    <p>Un clic suffit.<br><b>discord.gg/VFMfByp3ed</b></p>
                 </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-        <div class="emoji-wave">
-            <img src="images/Fluent_wave.png" alt="Émoji vague" draggable="false">
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <a class="brand" href="index.html">
+                <img src="images/sulfury-border.png" alt="" width="30" height="30" draggable="false">
+                <span>Sulfury</span>
+            </a>
+            <nav aria-label="Pied de page">
+                <a href="index.html">Accueil</a>
+                <a href="equipe/index.html">Équipe</a>
+                <a href="https://discord.gg/VFMfByp3ed" target="_blank" rel="noopener">Discord</a>
+            </nav>
+            <p>© <span data-year>2026</span> Sulfury — serveur Discord</p>
         </div>
-    </section>
+    </footer>
 
-    <script src="https://kit.fontawesome.com/cb9da243d3.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true, duration: 600, easing: 'ease-out' });
-    </script>
+    <script src="js/site.js"></script>
     <script src="js/home.js"></script>
-    <script src="js/nav_bar.js"></script>
 </body>
 
 </html>

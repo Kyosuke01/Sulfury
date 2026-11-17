@@ -7,7 +7,7 @@
     <meta name="description" content="Découvrez l'équipe du serveur Discord Sulfury.">
     <meta property="og:title" content="Sulfury — Équipe">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kyosuke01.github.io/Sulfury/equipe.html">
+    <meta property="og:url" content="https://kyosuke01.github.io/Sulfury/equipe/">
     <meta property="og:image" content="https://i.imgur.com/MW3PpIV.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="300">
@@ -16,7 +16,7 @@
     <meta property="twitter:image" content="https://i.imgur.com/MW3PpIV.png">
     <meta property="og:description" content="Découvrez l'équipe du serveur Discord Sulfury.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#1db954">
+    <meta name="theme-color" content="#0a1511">
     <meta name="rating" content="safe for kids">
     <meta name="language" content="French">
     <meta name="application-name" content="Sulfury">
@@ -26,294 +26,301 @@
 
     <link rel="shortcut icon" href="../icons/sulfury.png">
     <link rel="icon" type="image/png" href="../icons/favicon.png" sizes="192x192">
+
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="équipe.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="equipe.css">
 </head>
 
 <body>
-    <nav class="nav" id="nav">
-        <div class="nav_burger" id="nav_burger_wrapper">
-            <p id="nav_burger">&#x2630;</p>
-        </div>
-        <ul class="nav_link" id="nav_link">
-            <li>
-                <a href="../" class="sulfuryLogo" id="logo_link">
-                    <img id="logo_sulfury" src="../images/sulfury-border.png" alt="Logo Sulfury" draggable="false"
-                        oncontextmenu="return false;">
-                    <h1>Sulfury</h1>
-                </a>
-            </li>
-            <li><a class="nav-select nav_link_home" id="nav_link_home" href="../">
-                    <i class="fa-solid fa-fire-flame-curved"></i>&nbsp;Accueil</a></li>
-            <li><a class="page-select nav-select nav_link_equipe" id="nav_link_equipe">
-                    <i class="fa-solid fa-user-group"></i>&nbsp;Équipe</a></li>
-            <li><a class="nav_link_join" id="nav_link_join" href="https://discord.gg/VFMfByp3ed" target="_blank">
-                    <i class="fa-brands fa-discord"></i>&nbsp;Rejoindre</a></li>
-        </ul>
-    </nav>
+    <a class="skip" href="#contenu">Aller au contenu</a>
 
-    <header class="team-header">
-        <h2>L'équipe Sulfury</h2>
-        <p>Cliquez sur un pseudo pour le copier</p>
+    <header class="nav" id="nav">
+        <div class="nav-inner">
+            <a class="brand" href="../index.html">
+                <img src="../images/sulfury-border.png" alt="" width="38" height="38" draggable="false">
+                <span>Sulfury</span>
+            </a>
+            <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+                aria-controls="menu"><span></span><span></span></button>
+            <nav class="menu" id="menu" aria-label="Navigation principale">
+                <a href="../index.html">Accueil</a>
+                <a href="index.html" aria-current="page">Équipe</a>
+                <a class="btn btn-sm" href="https://discord.gg/VFMfByp3ed" target="_blank" rel="noopener">
+                    Rejoindre
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+                </a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div data-aos="fade-up" data-aos-duration="600" class="all_card">
-
-            <!-- Kyosuke -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/kyosuke.jpg"
-                        alt="Photo de profil de ky0suke.">
-                </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#e61111;">Propriétaire</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_kyosuke" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('ky0suke.', 'toast_kyosuke')" title="Cliquer pour copier">
-                        ky0suke.</p>
-                </div>
-                <div class="link">
-                    <a href="https://twitter.com/Kyosuke_TV" target="_blank" aria-label="Twitter de ky0suke."><i
-                            class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/kyosuke_tv/?hl=fr" target="_blank"
-                        aria-label="Instagram de ky0suke."><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCN22uKHyjraTSUmPV-N707A/featured?view_as=subscriber"
-                        target="_blank" aria-label="YouTube de ky0suke."><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.twitch.tv/ky0suke__" target="_blank" aria-label="Twitch de ky0suke."><i
-                            class="fa-brands fa-twitch"></i></a>
-                    <a href="https://open.spotify.com/user/tm8uws84dsnnlam4qm3ny61kk" target="_blank"
-                        aria-label="Spotify de ky0suke."><i class="fa-brands fa-spotify"></i></a>
-                    <a href="https://github.com/Kyosuke01" target="_blank" aria-label="GitHub de ky0suke."><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://www.reddit.com/user/Kyosuke_TV" target="_blank" aria-label="Reddit de ky0suke."><i
-                            class="fa-brands fa-reddit"></i></a>
-                </div>
+    <main id="contenu">
+        <section class="page-head">
+            <div class="head-art" aria-hidden="true">
+                <div class="head-art-rings"><i></i><i></i><i></i></div>
+                <div class="head-art-disc"><img src="../images/sulfury.png" alt="" width="512" height="512" draggable="false"></div>
             </div>
-
-            <!-- Kam -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/kam.jpg"
-                        alt="Photo de profil de kamoumoute">
-                </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#c89e00;">Fondateur</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_kam" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('kamoumoute', 'toast_kam')" title="Cliquer pour copier">
-                        kamoumoute</p>
-                </div>
-                <div class="link">
-                    <a href="https://www.instagram.com/kam_abst/?hl=fr" target="_blank"
-                        aria-label="Instagram de kamoumoute"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com/Kamou333" target="_blank" aria-label="Twitter de kamoumoute"><i
-                            class="fa-brands fa-twitter"></i></a>
-                </div>
+            <div class="wrap">
+                <p class="kicker"><span data-team-count>11</span> personnes</p>
+                <h1>Les gens derrière <em>Sulfury</em>.</h1>
             </div>
+        </section>
 
-            <!-- Solinouille -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/solinouille.jpg"
-                        alt="Photo de profil de solinouille">
-                </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#df611e;">Administrateur</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_solinouille" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('solinouille', 'toast_solinouille')"
-                        title="Cliquer pour copier">solinouille</p>
-                </div>
-                <div class="link">
-                    <a href="https://discord.gg/b8daxms5rC" target="_blank" aria-label="Discord de solinouille"><i
-                            class="fa-brands fa-discord"></i></a>
-                </div>
-            </div>
+        <div class="wrap">
 
-            <!-- Liffux -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/liffux.jpg"
-                        alt="Photo de profil de lifuxx.">
-                </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#df611e;">Administrateur</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_liffux" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('lifuxx.', 'toast_liffux')" title="Cliquer pour copier">
-                        lifuxx.</p>
-                </div>
-                <div class="link">
-                    <a aria-label="Profil privé"><i class="fa-solid fa-lock"></i></a>
-                </div>
-            </div>
+            <!-- ═════════ Direction ═════════ -->
+            <section class="group" aria-labelledby="g-direction">
+                <header class="group-head">
+                    <h2 id="g-direction">Direction</h2>
+                    <span class="group-count" aria-hidden="true">02</span>
+                </header>
 
-            <!-- Quentin -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/quentin.jpg"
-                        alt="Photo de profil de quentin94200">
-                </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#df611e;">Administrateur</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_quentin" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('quentin94200', 'toast_quentin')" title="Cliquer pour copier">
-                        quentin94200</p>
-                </div>
-                <div class="link">
-                    <a href="https://twitter.com/Tyshwan_" target="_blank" aria-label="Twitter de quentin94200"><i
-                            class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.reddit.com/user/Tyshwan_" target="_blank"
-                        aria-label="Reddit de quentin94200"><i class="fa-brands fa-reddit"></i></a>
-                </div>
-            </div>
+                <div class="members members-lead">
 
-            <!-- Ryota -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/ryota.jpg"
-                        alt="Photo de profil de Ryota">
-                </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#df611e;">Administrateur</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_ryota" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('Ryotaマ#2702', 'toast_ryota')" title="Cliquer pour copier">
-                        Ryotaマ#2702</p>
-                </div>
-                <div class="link">
-                    <a aria-label="Profil privé"><i class="fa-solid fa-lock"></i></a>
-                </div>
-            </div>
+                    <!-- Kyosuke -->
+                    <article class="member reveal" data-role="owner">
+                        <div class="member-photo">
+                            <img src="pp-discord/kyosuke.jpg" alt="Photo de profil de ky0suke." width="400" height="400" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Propriétaire</p>
+                            <button class="handle" type="button" data-copy="ky0suke." aria-label="Copier le pseudo ky0suke.">
+                                <span class="handle-name">ky0suke.</span>
+                            </button>
+                            <ul class="socials">
+                                <li><a href="https://twitter.com/Kyosuke_TV" target="_blank" rel="noopener" aria-label="Twitter de ky0suke."><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/kyosuke_tv/?hl=fr" target="_blank" rel="noopener" aria-label="Instagram de ky0suke."><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCN22uKHyjraTSUmPV-N707A/featured?view_as=subscriber" target="_blank" rel="noopener" aria-label="YouTube de ky0suke."><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="https://www.twitch.tv/ky0suke__" target="_blank" rel="noopener" aria-label="Twitch de ky0suke."><i class="fa-brands fa-twitch"></i></a></li>
+                                <li><a href="https://open.spotify.com/user/tm8uws84dsnnlam4qm3ny61kk" target="_blank" rel="noopener" aria-label="Spotify de ky0suke."><i class="fa-brands fa-spotify"></i></a></li>
+                                <li><a href="https://github.com/Kyosuke01" target="_blank" rel="noopener" aria-label="GitHub de ky0suke."><i class="fa-brands fa-github"></i></a></li>
+                                <li><a href="https://www.reddit.com/user/Kyosuke_TV" target="_blank" rel="noopener" aria-label="Reddit de ky0suke."><i class="fa-brands fa-reddit"></i></a></li>
+                            </ul>
+                        </div>
+                    </article>
 
-            <!-- Xeinel -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/xeinel.jpg"
-                        alt="Photo de profil de xeinel">
+                    <!-- Kam -->
+                    <article class="member reveal" style="--i:1" data-role="founder">
+                        <div class="member-photo">
+                            <img src="pp-discord/kam.jpg" alt="Photo de profil de kamoumoute" width="400" height="400" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Fondateur</p>
+                            <button class="handle" type="button" data-copy="kamoumoute" aria-label="Copier le pseudo kamoumoute">
+                                <span class="handle-name">kamoumoute</span>
+                            </button>
+                            <ul class="socials">
+                                <li><a href="https://www.instagram.com/kam_abst/?hl=fr" target="_blank" rel="noopener" aria-label="Instagram de kamoumoute"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://twitter.com/Kamou333" target="_blank" rel="noopener" aria-label="Twitter de kamoumoute"><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#df611e;">Administrateur</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_xeinel" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('xeinel', 'toast_xeinel')" title="Cliquer pour copier">xeinel
-                    </p>
-                </div>
-                <div class="link">
-                    <a href="https://twitter.com/paul_genillon" target="_blank" aria-label="Twitter de xeinel"><i
-                            class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/paul_genillon/" target="_blank"
-                        aria-label="Instagram de xeinel"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://discord.gg/TuHWntnqy9" target="_blank" aria-label="Discord de xeinel"><i
-                            class="fa-brands fa-discord"></i></a>
-                </div>
-            </div>
+            </section>
 
-            <!-- Nktim26 -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/nktim26.jpg"
-                        alt="Photo de profil de nktim26">
-                </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#5865f2;">Modérateur</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_nktim26" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('nktim26', 'toast_nktim26')" title="Cliquer pour copier">
-                        nktim26</p>
-                </div>
-                <div class="link">
-                    <a href="https://discord.gg/fzdX9rrUka" target="_blank" aria-label="Discord de nktim26"><i
-                            class="fa-brands fa-discord"></i></a>
-                </div>
-            </div>
+            <!-- ═════════ Administrateurs ═════════ -->
+            <section class="group" aria-labelledby="g-admins">
+                <header class="group-head">
+                    <h2 id="g-admins">Administrateurs</h2>
+                    <span class="group-count" aria-hidden="true">05</span>
+                </header>
 
-            <!-- Ardea974 -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/ardea974.jpg"
-                        alt="Photo de profil de ardea974">
-                </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#5865f2;">Modérateur</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_ardea974" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('ardea974', 'toast_ardea974')" title="Cliquer pour copier">
-                        ardea974</p>
-                </div>
-                <div class="link">
-                    <a aria-label="Profil privé"><i class="fa-solid fa-lock"></i></a>
-                </div>
-            </div>
+                <div class="members">
 
-            <!-- Sinan -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/serasker-sinan.jpg"
-                        alt="Photo de profil de sadrazamsinan">
-                </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#5865f2;">Modérateur</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_emin" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('sadrazamsinan', 'toast_emin')" title="Cliquer pour copier">
-                        sadrazamsinan</p>
-                </div>
-                <div class="link">
-                    <a href="https://www.instagram.com/embk95/?hl=fr" target="_blank"
-                        aria-label="Instagram de sadrazamsinan"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
+                    <!-- Solinouille -->
+                    <article class="member reveal" data-role="admin">
+                        <div class="member-photo">
+                            <img src="pp-discord/solinouille.jpg" alt="Photo de profil de solinouille" width="400" height="400" loading="lazy" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Administrateur</p>
+                            <button class="handle" type="button" data-copy="solinouille" aria-label="Copier le pseudo solinouille">
+                                <span class="handle-name">solinouille</span>
+                            </button>
+                            <ul class="socials">
+                                <li><a href="https://discord.gg/b8daxms5rC" target="_blank" rel="noopener" aria-label="Discord de solinouille"><i class="fa-brands fa-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </article>
 
-            <!-- Ninfrast -->
-            <div class="card">
-                <div class="pp-wrapper">
-                    <img draggable="false" oncontextmenu="return false;" class="pp" src="pp-discord/ninfrast.jpg"
-                        alt="Photo de profil de ikari8633">
-                </div>
-                <div class="role-wrapper">
-                    <span class="role" style="color:#5865f2;">Modérateur</span>
-                </div>
-                <div class="pseudo_copied">
-                    <p id="toast_ninfrast" class="copy-toast">Copié !</p>
-                    <p class="pseudo" onclick="copyPseudo('ikari8633', 'toast_ninfrast')" title="Cliquer pour copier">
-                        ikari8633</p>
-                </div>
-                <div class="link">
-                    <a href="https://www.youtube.com/channel/UCHNimp2oWPt3DAogjZAaOMg" target="_blank"
-                        aria-label="YouTube de ikari8633"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.twitch.tv/ninfrast" target="_blank" aria-label="Twitch de ikari8633"><i
-                            class="fa-brands fa-twitch"></i></a>
-                    <a href="https://steamcommunity.com/profiles/76561199201556380" target="_blank"
-                        aria-label="Steam de ikari8633"><i class="fa-brands fa-steam"></i></a>
-                </div>
-            </div>
+                    <!-- Liffux -->
+                    <article class="member reveal" style="--i:1" data-role="admin">
+                        <div class="member-photo">
+                            <img src="pp-discord/liffux.jpg" alt="Photo de profil de lifuxx." width="400" height="400" loading="lazy" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Administrateur</p>
+                            <button class="handle" type="button" data-copy="lifuxx." aria-label="Copier le pseudo lifuxx.">
+                                <span class="handle-name">lifuxx.</span>
+                            </button>
+                            <p class="private"><i class="fa-solid fa-lock"></i> Profil privé</p>
+                        </div>
+                    </article>
 
+                    <!-- Quentin -->
+                    <article class="member reveal" style="--i:2" data-role="admin">
+                        <div class="member-photo">
+                            <img src="pp-discord/quentin.jpg" alt="Photo de profil de quentin94200" width="400" height="400" loading="lazy" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Administrateur</p>
+                            <button class="handle" type="button" data-copy="quentin94200" aria-label="Copier le pseudo quentin94200">
+                                <span class="handle-name">quentin94200</span>
+                            </button>
+                            <ul class="socials">
+                                <li><a href="https://twitter.com/Tyshwan_" target="_blank" rel="noopener" aria-label="Twitter de quentin94200"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="https://www.reddit.com/user/Tyshwan_" target="_blank" rel="noopener" aria-label="Reddit de quentin94200"><i class="fa-brands fa-reddit"></i></a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Ryota -->
+                    <article class="member reveal" style="--i:3" data-role="admin">
+                        <div class="member-photo">
+                            <img src="pp-discord/ryota.jpg" alt="Photo de profil de Ryota" width="400" height="400" loading="lazy" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Administrateur</p>
+                            <button class="handle" type="button" data-copy="Ryotaマ#2702" aria-label="Copier le pseudo Ryotaマ#2702">
+                                <span class="handle-name">Ryotaマ#2702</span>
+                            </button>
+                            <p class="private"><i class="fa-solid fa-lock"></i> Profil privé</p>
+                        </div>
+                    </article>
+
+                    <!-- Xeinel -->
+                    <article class="member reveal" style="--i:4" data-role="admin">
+                        <div class="member-photo">
+                            <img src="pp-discord/xeinel.jpg" alt="Photo de profil de xeinel" width="400" height="400" loading="lazy" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Administrateur</p>
+                            <button class="handle" type="button" data-copy="xeinel" aria-label="Copier le pseudo xeinel">
+                                <span class="handle-name">xeinel</span>
+                            </button>
+                            <ul class="socials">
+                                <li><a href="https://twitter.com/paul_genillon" target="_blank" rel="noopener" aria-label="Twitter de xeinel"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/paul_genillon/" target="_blank" rel="noopener" aria-label="Instagram de xeinel"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://discord.gg/TuHWntnqy9" target="_blank" rel="noopener" aria-label="Discord de xeinel"><i class="fa-brands fa-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ═════════ Modérateurs ═════════ -->
+            <section class="group" aria-labelledby="g-mods">
+                <header class="group-head">
+                    <h2 id="g-mods">Modérateurs</h2>
+                    <span class="group-count" aria-hidden="true">04</span>
+                </header>
+
+                <div class="members">
+
+                    <!-- Nktim26 -->
+                    <article class="member reveal" data-role="mod">
+                        <div class="member-photo">
+                            <img src="pp-discord/nktim26.jpg" alt="Photo de profil de nktim26" width="400" height="400" loading="lazy" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Modérateur</p>
+                            <button class="handle" type="button" data-copy="nktim26" aria-label="Copier le pseudo nktim26">
+                                <span class="handle-name">nktim26</span>
+                            </button>
+                            <ul class="socials">
+                                <li><a href="https://discord.gg/fzdX9rrUka" target="_blank" rel="noopener" aria-label="Discord de nktim26"><i class="fa-brands fa-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Ardea974 -->
+                    <article class="member reveal" style="--i:1" data-role="mod">
+                        <div class="member-photo">
+                            <img src="pp-discord/ardea974.jpg" alt="Photo de profil de ardea974" width="400" height="400" loading="lazy" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Modérateur</p>
+                            <button class="handle" type="button" data-copy="ardea974" aria-label="Copier le pseudo ardea974">
+                                <span class="handle-name">ardea974</span>
+                            </button>
+                            <p class="private"><i class="fa-solid fa-lock"></i> Profil privé</p>
+                        </div>
+                    </article>
+
+                    <!-- Sinan -->
+                    <article class="member reveal" style="--i:2" data-role="mod">
+                        <div class="member-photo">
+                            <img src="pp-discord/serasker-sinan.jpg" alt="Photo de profil de sadrazamsinan" width="400" height="400" loading="lazy" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Modérateur</p>
+                            <button class="handle" type="button" data-copy="sadrazamsinan" aria-label="Copier le pseudo sadrazamsinan">
+                                <span class="handle-name">sadrazamsinan</span>
+                            </button>
+                            <ul class="socials">
+                                <li><a href="https://www.instagram.com/embk95/?hl=fr" target="_blank" rel="noopener" aria-label="Instagram de sadrazamsinan"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Ninfrast -->
+                    <article class="member reveal" style="--i:3" data-role="mod">
+                        <div class="member-photo">
+                            <img src="pp-discord/ninfrast.jpg" alt="Photo de profil de ikari8633" width="400" height="400" loading="lazy" draggable="false">
+                        </div>
+                        <div class="member-body">
+                            <p class="role">Modérateur</p>
+                            <button class="handle" type="button" data-copy="ikari8633" aria-label="Copier le pseudo ikari8633">
+                                <span class="handle-name">ikari8633</span>
+                            </button>
+                            <ul class="socials">
+                                <li><a href="https://www.youtube.com/channel/UCHNimp2oWPt3DAogjZAaOMg" target="_blank" rel="noopener" aria-label="YouTube de ikari8633"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="https://www.twitch.tv/ninfrast" target="_blank" rel="noopener" aria-label="Twitch de ikari8633"><i class="fa-brands fa-twitch"></i></a></li>
+                                <li><a href="https://steamcommunity.com/profiles/76561199201556380" target="_blank" rel="noopener" aria-label="Steam de ikari8633"><i class="fa-brands fa-steam"></i></a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </div>
+
+        <!-- Appel final -->
+        <section class="join">
+            <div class="wrap join-inner">
+                <h2 class="reveal">Envie de les rejoindre&nbsp;?</h2>
+                <a class="btn btn-ink btn-lg reveal" style="--i:1" href="https://discord.gg/VFMfByp3ed" target="_blank" rel="noopener">
+                    Rejoindre le serveur
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+                </a>
+            </div>
+        </section>
     </main>
 
-    <script src="https://kit.fontawesome.com/cb9da243d3.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true, duration: 600, easing: 'ease-out' });
-    </script>
-    <script src="pseudo_equipe.js"></script>
-    <script src="../js/nav_bar.js"></script>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <a class="brand" href="../index.html">
+                <img src="../images/sulfury-border.png" alt="" width="30" height="30" draggable="false">
+                <span>Sulfury</span>
+            </a>
+            <nav aria-label="Pied de page">
+                <a href="../index.html">Accueil</a>
+                <a href="index.html">Équipe</a>
+                <a href="https://discord.gg/VFMfByp3ed" target="_blank" rel="noopener">Discord</a>
+            </nav>
+            <p>© <span data-year>2026</span> Sulfury — serveur Discord</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/cb9da243d3.js" crossorigin="anonymous" defer></script>
+    <script src="../js/site.js"></script>
+    <script src="equipe.js"></script>
 </body>
 
 </html>
