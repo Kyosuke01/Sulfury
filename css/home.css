@@ -26,6 +26,7 @@
 .live strong { color: var(--cream); font-weight: 650; font-variant-numeric: tabular-nums; }
 .dot {
   width: 8px; height: 8px; border-radius: 50%; background: var(--sulfur);
+}
 
 .hero-title {
   margin-top: 28px;
